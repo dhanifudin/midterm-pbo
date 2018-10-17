@@ -59,7 +59,6 @@ class DiscountItem extends Item {
     public float disc() {
         return discount * 100;
     }
-    
 }
     
 
