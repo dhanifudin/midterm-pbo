@@ -19,7 +19,6 @@ public class Transaction {
         this.discountItem = discountItem;
         this.promoItem = promoItem;
     }
-
     public Item getItem() {
         return item;
     }
@@ -29,8 +28,6 @@ public class Transaction {
     public PromoItem getPromoItem() {
         return promoItem;
     }
-    
-    
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
