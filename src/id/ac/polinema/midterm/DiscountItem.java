@@ -27,6 +27,6 @@ public class DiscountItem extends Item{
     }
     
     public String toString(){
-        return "|"+name+"\t\t"+"|"+price+"\t\t"+"|"+amount+"\t\t"+"|"+getTotalPrice()+"\n|-Disc"+"\t\t"+"|"+discount*100+"%\t\t\t|\t\t|";
+        return "|"+name+"\t\t"+"|"+price+"\t"+"|"+amount+"\t\t"+"|"+getTotalPrice()+"\t|"+"\n|-Disc"+"\t\t"+"|"+discount*100+"%\t\t|\t\t|\t\t|";
     }
 }
