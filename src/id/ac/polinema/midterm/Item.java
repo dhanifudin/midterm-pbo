@@ -39,9 +39,11 @@ public class Item {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+    @Override
     public String toString(){ // override
         return "| "+name+"\t\t| "+price+"\t|"+amount+"\t\t|"+(price*amount);        
     }
+   
     public float getTotalPrice(){ // override
         return (price*amount)-(price-amount*amount);
 
