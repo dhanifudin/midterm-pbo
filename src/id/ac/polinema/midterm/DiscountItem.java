@@ -9,6 +9,11 @@
 package id.ac.polinema.midterm;
 
 
-public class DiscountItem {
-
+public class DiscountItem extends Item {
+    private float discount;
+    
+    public DiscountItem(String name, float price, int amount, float disc) {
+        super(name, price, amount); //Initialize super-class atts values
+        this.discount = disc; //Initialize promo attr value
+    }
 }
