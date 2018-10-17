@@ -21,7 +21,7 @@ public class PromoItem extends Item {
     
     //Method getTotalPrice
     public float getTotalPrice() {
-        return (price + amount) -(amount + promo);
+        return (price * amount) -(amount * promo);
     }
     
     //Method toString 
