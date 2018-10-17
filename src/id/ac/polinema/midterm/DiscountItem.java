@@ -29,7 +29,7 @@ public class DiscountItem extends Item{
         float diskonfix=total()-Diskon;
         return diskonfix;
     }
-    //Untuk menghitung diskon setelah itu harga total dikurangi diskon
+    //Untuk menghitung diskon setelah itu harga total dikurangi diskon.
     
     public String toString(){
         String print = "";
