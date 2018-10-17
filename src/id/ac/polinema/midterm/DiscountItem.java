@@ -14,7 +14,7 @@ public class DiscountItem extends Item{
     private float discount;
 
     // pembuatan constructor class DiscountItem
-    DiscountItem(String name, float price, int amount, float discount){
+    public DiscountItem(String name, float price, int amount, float discount){
         super(name, price, amount);
         this.discount = discount;
     }
@@ -33,6 +33,6 @@ public class DiscountItem extends Item{
     // method untuk menampilkan hasil
     @Override
     public String toString(){
-        return "|"+(name)+"\t\t|"+(price)+"\t"+(amount)+"\t\t|"+getTotalPrice()+"\t|\n|-Discount\t|"+discount * 100+"%\t\t|\t\t|\t\t|";
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getTotalPrice()+"\t|\n|-Discount\t|"+discount * 100+"%\t\t|\t\t|\t\t|";
     }
 }
