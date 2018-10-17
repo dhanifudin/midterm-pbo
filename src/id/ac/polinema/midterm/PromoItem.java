@@ -23,9 +23,10 @@ public class PromoItem extends Item{
         return total;
     }
     
-    public String toString() { //Set Output value for this.Class
+    public String toString() {
         String param = "";
-        
+        param += "| "+this.name+" \t\t| "+this.price+" \t| "+this.amount+" \t\t| "+getTotalPrice()+" \t|\n";
+        param += "| -Promo \t| "+this.promo+" \t|  \t\t|  \t\t|";
         return param;
     }
 }
