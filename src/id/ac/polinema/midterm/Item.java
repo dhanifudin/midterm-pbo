@@ -16,13 +16,15 @@ public class Item {
     protected float price ;
     protected int amount ;
     
-    
+    // saya membuat construktor ini untuk class Item agar di bisa di inputkan di class Main
     public Item(String name , float price , int amount) {
         this.name = name ;
         this.price = price ;
         this.amount = amount ;
     }
     
+    
+    // untuk menampilkan info cetak / output
     @Override
     public String toString() {
         return "|" + (name) + "\t\t|" + (price) + "\t|" + (amount) + "\t\t|" + (price*amount)+ "/|" ;
