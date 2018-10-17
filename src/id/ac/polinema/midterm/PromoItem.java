@@ -15,7 +15,6 @@ public class PromoItem extends Item{
     public void setPromo(float promo) {
         this.promo = promo;
     }
-
     public float getPromo() {
         return promo;
     }
