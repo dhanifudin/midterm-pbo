@@ -11,12 +11,12 @@ package id.ac.polinema.midterm;
  */
 public class Transaction {
     private Item item;
-    private DiscountItem discItem;
+    private DiscountItem discountItem;
     private PromoItem promoItem;
 
     public Transaction(Item item, DiscountItem discItem, PromoItem promoItem) {
         this.item = item;
-        this.discItem = discItem;
+        this.discountItem = discountItem;
         this.promoItem = promoItem;
     }
     
