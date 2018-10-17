@@ -51,4 +51,11 @@ public class Item {
 	}
 	
 	
+	public float getTotalPrice(){
+		return price * amount;
+	}
+	
+	public String toString(){
+		return name;
+	}
 }
