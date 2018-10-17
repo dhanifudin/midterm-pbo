@@ -19,10 +19,14 @@ public class PromoItem extends Item {
         this.promo = promo ;
     }
     
+    //disini untuk menghitung harga promo pada kopi
     public float getPromo() {
         return (amount * price) - (promo*amount) ;
     }
     
+    
+    
+    //untuk menampilkan info cetak / output
     public String toString() {
         return "|" + name + "\t\t" + "|" + price + "\t|" + amount + "\t\t|" + +getPromo()+ "\t|\n|-Promo\t\t|" + promo + "\t|\t\t|\t\t|" ;
     }
