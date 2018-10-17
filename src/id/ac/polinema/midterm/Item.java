@@ -48,12 +48,12 @@ public class Item {
     
     
     public float getTotalPrice(){
-    return PromoItem = 
+    return amount*price; 
     }
     
     @Override
     public String toString(){
-        return 
+        return name+price+amount; 
     }
     
             
