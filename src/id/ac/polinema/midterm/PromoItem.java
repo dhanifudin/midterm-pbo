@@ -19,5 +19,9 @@ public class PromoItem extends Item {
         this.promo = promo ;
     }
     
+    public String toString() {
+        return "|" + name + "\t\t" + "|" + price + "\t|" + amount + "\t\t|" + +getPromo()+ "\t|\n|-Promo\t\t|" + promo + "%\t|\t\t|\t\t|" ;
+    }
+    
 
 }
