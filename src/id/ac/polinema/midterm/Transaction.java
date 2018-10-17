@@ -12,8 +12,16 @@ package id.ac.polinema.midterm;
 public class Transaction {
     
     private Item item;
-    private DiscountItem discount;
-    private PromoItem promoitem;
+    private DiscountItem discountItem;
+    private PromoItem promoItem;
+    //membuat atributnya
+
+    public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
+        this.item = item;
+        this.discountItem = discountItem;
+        this.promoItem = promoItem;
+    }
+    //constructor bagi transaksi
     
     
     
