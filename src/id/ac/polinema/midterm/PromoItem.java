@@ -11,11 +11,18 @@ package id.ac.polinema.midterm;
  */
 public class PromoItem {
     private float promo;
+
+    public PromoItem() {
+    }
     
     public PromoItem(String name, float price, int amount, float promo){
     }
-    
-//    public PromoItem(String kopi, int i, int i0, int i1) {
-//    }
-    
+
+    public float getPromo() {
+        return promo;
+    }
+
+    public void setPromo(float promo) {
+        this.promo = promo;
+    }
 }

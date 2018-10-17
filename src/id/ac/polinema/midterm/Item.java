@@ -18,7 +18,34 @@ public class Item {
 //    yang didefinisikan dengan tingkatan akses ini dapat diakses oleh kelas yang memilikinya saja
 //    dan juga kelas-kelas yang masih memiliki keturunan atau Encapsulation data
 
+    public Item() {
+    }
+
     Item(String gula, int i, int i0) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 }

@@ -14,13 +14,16 @@ public class Transaction {
     private DiscountItem discountItem;
     private PromoItem promoItem;
 
-	public void print() {
-		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
-		System.out.println("|---------------------------------------------------------------|");
-		System.out.println(item);
-		System.out.println(discountItem);
-		System.out.println(promoItem);
-		System.out.println("|---------------------------------------------------------------|");
-	}
-	
+    Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
+        
+    }
+
+    public void print() {
+	System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
+	System.out.println("|---------------------------------------------------------------|");
+	System.out.println(item);
+	System.out.println(discountItem);
+	System.out.println(promoItem);
+	System.out.println("|---------------------------------------------------------------|");
+    }
 }

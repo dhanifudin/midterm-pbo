@@ -11,10 +11,19 @@ package id.ac.polinema.midterm;
  */
 public class DiscountItem {
     private float discount;
-    
-    public DiscountItem(String name, float price, int amount, int discount){
+
+    public DiscountItem() {
     }
-//    public DiscountItem(String susu, int i, int i0, float f) {
-//    }
     
+    public DiscountItem(String name, float price, int amount, float discount){
+        
+    }
+
+    public float getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(float discount) {
+        this.discount = discount;
+    }
 }
