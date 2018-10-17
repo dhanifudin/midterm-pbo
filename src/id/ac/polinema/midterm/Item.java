@@ -54,7 +54,8 @@ public class Item {
        return price * amount;
    }
    
-   public String toString(){
+    @Override
+public String toString(){
        return nama;
    }
 }
