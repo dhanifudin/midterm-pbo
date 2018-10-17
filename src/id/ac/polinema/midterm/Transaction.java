@@ -14,6 +14,11 @@ public class Transaction {
         private DiscountItem discountItem;
         private PromoItem promoItem;
         
+        Transaction (Item item, DiscountItem discountItem, PromoItem promoItem){
+            this.discountItem = discountItem;
+            this.item = item;
+            this.promoItem = promoItem;
+        }
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
