@@ -41,7 +41,7 @@ public class Item {
     @Override
     public String toString(){ // override
         return "| "+name+"\t\t| "+price+"\t|"+amount+"\t\t|"+getTotalPrice()+"\t|";        
-        // menampilkan nama,harga,jumlah dan total harga
+        // menampilkan nama,harga,jumlah dan total harga dari Objek Item yang di deklarasikan nilainya di MidtermTest.java
     }
    
     public float getTotalPrice(){ // override
