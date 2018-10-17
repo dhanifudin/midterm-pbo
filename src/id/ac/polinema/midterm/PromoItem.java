@@ -16,7 +16,7 @@ public class PromoItem extends Item {
     
     
     
-    //
+    // konstukror ini sama seperti pada class lainnya agar bisa diinputkan
     public PromoItem(String name, float price, int amount , float promo) {
         super(name, price, amount);
         this.promo = promo ;
