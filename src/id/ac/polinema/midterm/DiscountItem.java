@@ -5,10 +5,6 @@
  */
 package id.ac.polinema.midterm;
 
-/**
- *
- * @author Dhandy
- */
 public class DiscountItem extends Item{
      private float discount;
 
