@@ -15,5 +15,15 @@ public class DiscountItem extends Item{
     public DiscountItem(String name, float price, int amount) {
         super(name, price, amount);
     }
-   
+    
+    public float getDiscount(){
+        return (amount*price)*discount/100;
+    }
+    
+    public float getTotalPrice(){
+        return amount*price-getDiscount()
+    }
+    
+    public String getString(){
+        return"|"+name+"\t\t"+"|"+price+"\t"+"|"+amount+"\t\t"+"|"+getTotalPrice()+"\t"+"\n|-Disc"+"\t\t"+"|"+discount+"%\t\t|\t\t|\t\t|"}
 }
