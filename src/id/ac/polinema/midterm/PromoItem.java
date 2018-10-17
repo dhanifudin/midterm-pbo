@@ -44,16 +44,13 @@ class PromoItem extends Item{
     public int getAmount() {
         return amount;
     }
-
     public void setAmount(int amount) {
         this.amount = amount;
     }
     public float PromoItem(){
         return (price * amount) - (promo*amount);
     }
-
     public float promo() {
         return promo;
     }
-
 }
