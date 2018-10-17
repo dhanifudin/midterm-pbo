@@ -12,13 +12,16 @@ package id.ac.polinema.midterm;
 public class PromoItem extends Item {
     private float promo;
 
-    public PromoItem(float promo, String nama, float price, int amount) {
+    public PromoItem(String nama, float price, int amount,float promo ) {
         super(nama, price, amount);
         this.promo = promo;
     }
     
-    public float getTotalPromo(){
+    public float getTotalPrice(){
         return (price * amount)-(promo * amount);
+    }
+    public float getPromo(){
+        return promo;
     }
     
 }

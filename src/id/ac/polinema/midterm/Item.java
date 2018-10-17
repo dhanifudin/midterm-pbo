@@ -49,4 +49,7 @@ public class Item {
         return null;
         
     }
+    public float getTotal(){
+        return price * amount ;
+    }
 }
