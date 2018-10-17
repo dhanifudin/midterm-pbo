@@ -12,7 +12,7 @@ public class DiscountItem extends Item {
     public float getTotalHargaSusu() {
         return (price * amount) - (price * amount * discount);
     }
-    //mengambil diskon
+    //mengambil 
     public float getDiscount() {
         return discount;
     }
