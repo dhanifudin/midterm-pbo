@@ -19,6 +19,8 @@
 
 - Tambahkan komentar deskriptif untuk setiap baris kode yang anda buat.
 
+- Lakukan commit untuk setiap perubahan yang anda lakukan.
+
 - Uji project yang anda kerjakan berdasarkan `MidtermTest.java` sehingga
  menghasilkan output berikut
 
