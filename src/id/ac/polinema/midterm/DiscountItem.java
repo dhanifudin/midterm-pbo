@@ -20,13 +20,13 @@ public class DiscountItem extends Item{
     
     //menambahkan method total harga
     public float getTotalPrice(){
-       float totalprice = price - discount;
+
        return totalprice; 
     }
     
     //menambahkan method untuk menampilkan isi
     public String toString(){
-        return nama;
+
     }
     
     
