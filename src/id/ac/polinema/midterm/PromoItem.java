@@ -21,6 +21,11 @@ public class PromoItem extends Item{
         return (price*amount) - (amount*promo);
     }
     
+    @Override
+    public String toString(){
+        return "|" + (name) + "\t\t" + (price) + "\t\t|" +(amount) +"\t\t|" + getTotalPrice() + "\t|" + "\n"+"|"+"-Promo"+"\t\t"+(promo)+"\t\t|"+"\t\t|"+"\t\t|";
+    }
+    
     
     
     
