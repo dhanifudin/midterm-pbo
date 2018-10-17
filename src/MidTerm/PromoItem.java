@@ -17,6 +17,9 @@ public class PromoItem extends Item {
     this.promo = promo;
     }
     
+    /*
+    didalam method getTotalPrice harga dikali jumlah lalu dikurangi dari promo dikali jumlah
+    */
     public float getTotalPrice(){
         return (amount*price)-(promo*amount);
     }

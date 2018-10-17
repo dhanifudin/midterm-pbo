@@ -16,7 +16,9 @@ public class DiscountItem extends Item{
         super(name, price, amount);
         this.discount = discount;
     }
-    
+    /*
+    method getDiscount()yaitu menampilkan harga dikali jumlah lalu dikali diskon
+    */
     public float getDiscount(){
         return (amount*price)*discount;
     }
