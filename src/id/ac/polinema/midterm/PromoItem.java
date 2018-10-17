@@ -9,7 +9,12 @@ public class PromoItem extends Item{
 
     public PromoItem(String name, float price, int amount, float promo) {
         super(name, price, amount);
-        this.promo = promo;
+        if (amount == 2) {
+            super.price = price * amount;
+        } else {
+          this.promo = promo;  
+        }
+        //this.promo = promo;
     }
 
     public void setPromo(float promo) {
