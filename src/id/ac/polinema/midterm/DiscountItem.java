@@ -31,7 +31,7 @@ public class DiscountItem extends Item {
     
     //method untuk menampilkan
     public String toString(){
-        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t"+getTotalPrice()+"\t|\n|-Discount\t|"+discount*100+"%\t\t|\t\t|\t\t|";
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getTotalPrice()+"\t|\n|-Discount\t|"+discount*100+"%\t\t|\t\t|\t\t|";
     }
     
 }

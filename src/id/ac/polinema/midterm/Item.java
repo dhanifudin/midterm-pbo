@@ -33,8 +33,4 @@ public class Item {
         return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+(price*amount)+"\t|";
     }
     
-    
-    
-    
-    
 }
