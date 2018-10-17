@@ -21,6 +21,11 @@ public class DiscountItem extends Item{
     public float getTotalHargasusu(){
     return (price*amount)-(price*amount*discount);
     }
+
+    public float getDiscount() {
+        return discount;
+    }
    
+    
     
 }
