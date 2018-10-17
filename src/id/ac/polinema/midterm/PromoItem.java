@@ -28,5 +28,9 @@ public class PromoItem extends Item{
     public int getAmount() {
         return amount;
     }
+    @Override
+    public String toString(){
+        return "| "+name+"\t\t|"+price+"\t\t"+amount+"\t\t|";
+    }
     
 }
