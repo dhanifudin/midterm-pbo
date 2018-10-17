@@ -15,6 +15,8 @@ public class Transaction {
     private DiscountItem discountitem ;
     private PromoItem promoitem ;
 
+    
+    // saya membuat construktor ini untuk menghitung diskon pada class Discount item dan menghitung promo pada class PromoItem
     public Transaction(Item item, DiscountItem discountitem, PromoItem promoitem) {
         this.item = item;
         this.discountitem = discountitem;
@@ -22,7 +24,7 @@ public class Transaction {
     }
     
     
-    
+  
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
