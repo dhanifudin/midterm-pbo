@@ -15,16 +15,13 @@ public class Transaction {
     private DiscountItem discountItem;
     private PromoItem promoItem;
 
+    //Kontruktor ini saya bikin sama dengan yang ada di class main untuk menghilangkan error yang ada.
     public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
         this.item = item;
         this.discountItem = discountItem;
         this.promoItem = promoItem;
     } 
     
-    
-    
-    
-
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
