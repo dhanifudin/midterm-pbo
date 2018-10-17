@@ -16,4 +16,13 @@ class PromoItem extends Item{
         super(name, price, amount);
         this.promo=promo;
     }
+    
+    public float getPromo(){
+        return (amount*price)-(promo*amount);
+    }
+    
+     public String toString(){
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getPromo()+"|\n-Promo"+"\t\t";
+    }
+
 }

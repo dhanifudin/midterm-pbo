@@ -17,16 +17,18 @@ class DiscountItem extends Item{
         this.discount=discount;
     }
 
+    //menghitung diskon
     public float getDiscount() {
         return (amount*price)*discount;
     }
     
+    //
     public float getTotalPrice(){
         return price*amount-getDiscount();
     }
     
    public String toString(){
-        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getTotalPrice()+"|\n-Disc"+"\t\t";
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getTotalPrice()+"\t|\n|-Disc\t\t|"+discount+"%\t\t|\t\t|\t\t|";
     }
 
 
