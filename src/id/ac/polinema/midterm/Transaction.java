@@ -13,7 +13,8 @@ public class Transaction {
     private Item item;
     private DiscountItem discountItem;
     private PromoItem promoItem;
-
+    
+    //Untuk menggunakan method dan atribute pada class lain
     public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
         this.item = item;
         this.discountItem = discountItem;
