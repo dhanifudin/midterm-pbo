@@ -9,10 +9,13 @@ package id.ac.polinema.midterm;
  *
  * @author Arifanny Ramadhan Sukma / 1741720217 / TI=2A
  */
-public class Discountitem {
+public class Discountitem extends Item {
     private float discount;
 
-    public Discountitem(float discount) {
+    public Discountitem(String name, float price, int amount, float discount) {
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
         this.discount = discount;
     }
     

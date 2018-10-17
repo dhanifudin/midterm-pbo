@@ -11,9 +11,9 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-    private String name;
-    private float price;
-    private int amount;
+    protected String name;
+    protected float price;
+    protected int amount;
 
     public Item(String name, float price, int amount) {
         this.name = name;
