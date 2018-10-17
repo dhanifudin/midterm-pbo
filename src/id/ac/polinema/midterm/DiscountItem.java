@@ -10,13 +10,13 @@ package id.ac.polinema.midterm;
  * @author hp
  */
 class DiscountItem extends Item {
-    private float discount;
+    float discount;
     
     public DiscountItem(){
         
     }
 
-    public DiscountItem(String nama, float price, int amount, float promo) {
+    public DiscountItem(String nama, float price, int amount, float discount) {
         super(nama, price, amount);
         this.discount = discount;
     }
@@ -24,6 +24,10 @@ class DiscountItem extends Item {
     @Override
     public float getTotalPrice(){
        return price*amount-(discount*price*amount); 
+    }
+    
+    public float getDiscount(){
+      return discount * 100;  
     }
     
     
