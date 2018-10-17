@@ -16,7 +16,7 @@ public class Item {
     protected float price ;
     protected int amount ;
     
-    // saya membuat construktor ini untuk class Item agar di bisa di inputkan di class Main
+    // saya membuat construktor ini untuk class Item agar bisa di inputkan di class Main
     public Item(String name , float price , int amount) {
         this.name = name ;
         this.price = price ;
