@@ -26,6 +26,6 @@ public class PromoItem extends Item{
 
     @Override
     public String toString() {
-        return "Promo "+promo;
+        return "-Promo "+promo;
     }
 }
