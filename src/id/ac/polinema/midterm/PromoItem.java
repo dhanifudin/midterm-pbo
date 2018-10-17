@@ -10,7 +10,7 @@ package id.ac.polinema.midterm;
  * @author KINTUL
  */
 class PromoItem extends Item{
-    private float promo;
+    protected float promo;
     
     public PromoItem(){
         
@@ -18,7 +18,7 @@ class PromoItem extends Item{
 
     public PromoItem(String name, float price, int amount, float promo) {
         super(name, price, amount);
-        this.promo = promo;
+        this.promo = price * amount - promo;
     }
     
     
