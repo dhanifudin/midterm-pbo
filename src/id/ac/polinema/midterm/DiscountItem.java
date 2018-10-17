@@ -26,4 +26,7 @@ public class DiscountItem extends Item{
         return price-getDiscount();
     }
     
+    public String toString(){
+        return super.toString()+"\t\t"+getTotalPrice();
+    }
 }

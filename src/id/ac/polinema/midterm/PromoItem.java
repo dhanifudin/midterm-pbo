@@ -21,6 +21,8 @@ public class PromoItem extends Item{
         return price-promo;
     }
     
-    
+    public String toString(){
+        return super.toString()+"\t\t"+getTotalPrice();
+    }
     
 }
