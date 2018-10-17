@@ -21,6 +21,11 @@ public class Item {
         this.price = price;
         this.amount = amount;
     }
-    
+    public float getTotalPrice(){
+        return price * amount;
+    }
+    public String toString(){
+        return name;
+    }
     
 }
