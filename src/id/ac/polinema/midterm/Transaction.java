@@ -43,11 +43,6 @@ public class Transaction {
     public void setPromoItem(PromoItem promoItem) {
         this.promoItem = promoItem;
     }
-
-    @Override
-    public String toString(){
-        return "| " + getItem().getName() + " \t\t| " + getItem().getPrice() + " \t| " + getItem().getAmount() + " \t| Total \t|";
-    }
     
     public void print() {
 	System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");

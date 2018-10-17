@@ -52,4 +52,12 @@ public class DiscountItem extends Item{
         this.amount = amount;
     }
     
+    public float getTotalPrice(){
+        return getPrice()*getAmount() - getPrice()*getAmount()*getDiscount();
+    }
+    
+    @Override
+    public String toString(){
+        return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t\t| " + getTotalPrice() + " \t|";
+    }
 }

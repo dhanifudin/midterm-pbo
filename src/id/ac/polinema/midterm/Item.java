@@ -51,13 +51,12 @@ public class Item {
         this.amount = amount;
     }
     
-    @Override
-    public String toString(){
-        return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t| Total \t|";
+    public float getTotalPrice(){
+        return getPrice()*getAmount();
     }
     
-    public void output(){
-        System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
-        System.out.println("| " + getName() + " \t\t| "  + getPrice() + " \t| " + getAmount() + " \t| Total \t|");
+    @Override
+    public String toString(){
+        return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t\t| " + getTotalPrice() + " \t|";
     }
 }

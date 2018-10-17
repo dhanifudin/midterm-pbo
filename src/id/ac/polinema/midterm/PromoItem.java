@@ -51,5 +51,13 @@ public class PromoItem extends Item{
     public void setAmount(int amount) {
         this.amount = amount;
     }
-
+    
+    public float getTotalPrice(){
+        return getPrice()*getAmount() - getPromo()*getAmount();
+    }
+    
+    @Override
+    public String toString(){
+        return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t\t| " + getTotalPrice() + " \t|";
+    }
 }
