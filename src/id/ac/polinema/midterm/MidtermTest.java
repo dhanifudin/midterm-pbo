@@ -18,6 +18,6 @@ public class MidtermTest {
 		PromoItem promoItem = new PromoItem("Kopi", 10000, 2, 2000);
 
 		Transaction transaction = new Transaction(item, discountItem, promoItem);
-		transaction.print();
+		transgaction.print();
 	}
 }
