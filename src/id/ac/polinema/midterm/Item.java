@@ -41,11 +41,11 @@ public class Item {
     }
     @Override
     public String toString(){ // override
-        return "| "+name+"\t\t| "+price+"\t|"+amount+"\t\t|"+(price*amount);        
+        return "| "+name+"\t\t| "+price+"\t|"+amount+"\t\t|"+getTotalPrice();        
     }
    
     public float getTotalPrice(){ // override
-        return (price*amount)-(price-amount*amount);
+        return this.price*this.amount;
 
     }
 }
