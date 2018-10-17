@@ -26,7 +26,7 @@ public class Item extends Item{
     }
     
     public String toString(){
-        return (name);
+        return name+"\t\t"+price+"\t\t"+amount+"\t\t"+getTotalPrice();
     }
     
 }

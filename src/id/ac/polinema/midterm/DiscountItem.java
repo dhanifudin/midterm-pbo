@@ -15,4 +15,5 @@ public class DiscountItem extends Item{
     public DiscountItem(String name, float price, int amount) {
         super(name, price, amount);
     }
+   
 }
