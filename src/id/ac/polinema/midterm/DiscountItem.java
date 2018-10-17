@@ -17,13 +17,13 @@ public class DiscountItem extends Item {
         this.discount = disc * 100; //Initialize promo attr value
     }
     
-    private float getDisc() { //Get discount price
+    private float getDisc() { // Get discount price
         float total = this.price * this.amount;
         float disc = (this.discount / 100)* total;
         return disc;
     }
     
-    public float getTotalPrice() { //Get total after discount
+    public float getTotalPrice() { // Get total after discount
         float total = this.price * this.amount;
         total = total - getDisc();
         return total;
