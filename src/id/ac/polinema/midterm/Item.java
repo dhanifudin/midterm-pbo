@@ -8,8 +8,8 @@ package id.ac.polinema.midterm;
 
 /**
  *
- * @author dhanifudin
+ * @author Firnanda(Rizka)
  */
 public class Item {
-
+	
 }
