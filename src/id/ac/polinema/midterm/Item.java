@@ -11,5 +11,26 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
+    //atribute
+    protected String name;
+    protected float price;
+    protected int amount;
+    
+    //konstruktor
+    public Item(String name, float price,int amount){
+        this.name=name;
+        this.price=price;
+        this.amount=amount;
+    
+    }
+    //method getTotalPrice
+    public float getTotalPrice(){
+        return (int) (amount*price);
+    
+    }
+    //method toString
+    public String toString(){
+        return name+"|"+(name)+"\t\t"+(price)+"\t|"+(amount)+"\t\t|"+(price*amount)+"\t|";
+    }
 
 }
