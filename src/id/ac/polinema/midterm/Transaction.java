@@ -23,8 +23,6 @@ public class Transaction {
         this.promoItem = promoItem;
     }
 
-    
-
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
@@ -35,5 +33,4 @@ public class Transaction {
                 System.out.println("|-Promo \t|" + promoItem.promo());
 		System.out.println("|---------------------------------------------------------------|");
 	}
-	
 }
