@@ -12,8 +12,8 @@ package id.ac.polinema.midterm;
 class DiscountItem extends Item {
     private float discount;
 
-    public DiscountItem(float discount, String Nama, float Price, int amount) {
-        super(Nama, Price, amount);
+    public DiscountItem(String Name, float Price, int amount,float discount) {
+        super(Name, Price, amount);
         this.discount = discount;
     }
 
@@ -25,12 +25,12 @@ class DiscountItem extends Item {
         this.discount = discount;
     }
 
-    public String getNama() {
-        return Nama;
+    public String getName() {
+        return Name;
     }
 
-    public void setNama(String Nama) {
-        this.Nama = Nama;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
     public float getPrice() {
