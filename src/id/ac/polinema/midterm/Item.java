@@ -24,13 +24,13 @@ public class Item {
     
     //method ini berguna untuk memberi atau mencari harga total 
     public float getTotalPrice(){
-    return amount*price; 
+    return this.amount*this.price; 
     }
     
     //method ini berguna seperti informasi informasi seperti yang ada di latihan soal pak
     @Override
     public String toString(){
-        return "|" + (name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+(getTotalPrice())+"\t|"+"\n"+""; 
+        return "|" + (this.name)+"\t\t|"+(this.price)+"\t|"+(this.amount)+"\t\t|"+(getTotalPrice())+"\t|"+"\n"+""; 
     }
     
             
