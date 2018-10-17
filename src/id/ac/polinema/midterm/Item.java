@@ -19,6 +19,7 @@ public class Item {
         this.name = name;
         this.price = price;
         this.amount = amount;
+        getTotalPrice();
     }
     public String getName() {
         return name;
@@ -38,10 +39,12 @@ public class Item {
     public void setAmount(int amount) {
         this.amount = amount;
     }
-    //public String toString(){
+    public String toString(){ // override
+        return null;
         
-    //}
-    public float getTotalPrice(){
-        return price - amount;
+    }
+    public float getTotalPrice(){ // override
+        return 0;
+
     }
 }
