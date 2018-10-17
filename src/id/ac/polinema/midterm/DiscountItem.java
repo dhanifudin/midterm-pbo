@@ -22,7 +22,7 @@ public class DiscountItem extends Item{
     public float getTotalDiscount(){
         return (price*amount)-(price * amount * discount);
     }
-    public float setDiscount(){
+    public float getDiscount(){
         return discount * 100 ;
     }
     
