@@ -54,4 +54,7 @@ class PromoItem extends Item{
     public float PromoItem(){
         return (price*amount) - promo;
     }
+    public float promo(){
+        return promo;
+    }
 }

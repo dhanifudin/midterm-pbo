@@ -50,7 +50,6 @@ public class Item {
     
     public float getTotalPrice(){
         return price*amount;
-        
     }
     
     @Override
