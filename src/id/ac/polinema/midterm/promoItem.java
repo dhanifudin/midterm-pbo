@@ -12,16 +12,19 @@ package id.ac.polinema.midterm;
 public class promoItem extends Item {
     private float promo;
     
+    //Konstruktor class promo item
     public promoItem(String name, float price, int amount, float promo) {
         super(name, price, amount);
         this.promo = promo;
     }
     
     @Override
-    public float getTotal() {
+    //Method override dari class item
+    public float getTotal() { 
         return super.getTotal() - this.promo;
     }
     
+    //Method untuk menampilkan isi class promoItem
     public String toString() {
         String tostring = "";
         tostring += "| "+this.name+" \t\t| "+this.price+" \t| "+this.amount+" \t\t| "+ this.getTotal() +"\t|\n";
