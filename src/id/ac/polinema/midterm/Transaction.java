@@ -13,6 +13,14 @@ public class Transaction {
     Item item;
     DiscountItem discountItem;
     PromoItem promoItem;
+
+    public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
+        this.item = item;
+        this.discountItem = discountItem;
+        this.promoItem = promoItem;
+    }
+    
+    
     
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
