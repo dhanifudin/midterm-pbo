@@ -32,7 +32,7 @@ public class DiscountItem extends Item{
     @Override
     public String toString(){
         return "| "+name+"\t\t| "+price+"\t|"+amount+"\t\t|"+this.getTotalPrice()+"\t|\n"
-               +"|- Disc\t\t| "+(getDiscount()*100)+"%\t\t|\t\t|\t\t|";
+               +"| -Disc\t\t| "+(getDiscount()*100)+"%\t\t|\t\t|\t\t|";
     }
     @Override
     public float getTotalPrice(){
