@@ -30,6 +30,6 @@ public class Item {
     
     @Override
     public String toString(){
-        return name+ " \t\t" +price+ " \t\t" +amount;
-    }
+        return "|"+(name)+" \t\t|"+(price)+"\t\t|"+(amount)+"\t\t|"+(price*amount)+"\t\t|";
+    }    
 }
