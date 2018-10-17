@@ -20,6 +20,7 @@ public class PromoItem extends Item {
     }
     
     //Method getTotalPrice
+    @Override
     public float getTotalPrice() {
         return (price * amount) -(amount * promo);
     }
