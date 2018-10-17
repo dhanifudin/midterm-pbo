@@ -21,8 +21,8 @@ public class Transaction extends Item{
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
-		System.out.println(item);
-		System.out.println(discountItem);
+                System.out.println(item.getName());
+		System.out.println(discountItem.name);
 		System.out.println(promoItem);
 		System.out.println("|---------------------------------------------------------------|");
 	}

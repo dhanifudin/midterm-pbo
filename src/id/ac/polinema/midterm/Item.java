@@ -41,5 +41,7 @@ public class Item {
         this.amount = amount;
     }
 
-    
+    public float getTotalPrice(){
+    return price * amount;
+    }
 }
