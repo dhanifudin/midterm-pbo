@@ -20,6 +20,8 @@ public class PromoItem extends Item{
         super(name, price, amount);
         this.promo = promo;
     }
-    
+    public float setPromo(){
+        return  (price - promo) * amount;
+    }
     
 }
