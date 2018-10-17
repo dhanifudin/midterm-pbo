@@ -17,11 +17,13 @@ public class PromoItem extends Item{
         this.promo = promo; //Initialize promo attr value
     }
     
-    public float getTotal() { //Get price after total
-        return this.price - this.promo;
+    public float getTotalPrice() { //Get price after total
+        float total = this.price * this.amount;
+        total = total - this.promo;
+        return total;
     }
     
-    public String toString() {
+    public String toString() { //Set Output value for this.Class
         String param = "";
         
         return param;
