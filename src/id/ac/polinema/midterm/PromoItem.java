@@ -18,4 +18,15 @@ public class PromoItem extends Item {
         super(name, price, amount);
         this.promo = promo;
     }
+    
+    //Method getTotalPrice
+    public float getTotalPrice() {
+        return (price + amount) -(amount + promo);
+    }
+    
+    //Method toString 
+    @Override
+    public String toString() {
+        return "|" + (name) + "\t\t" + (price) + "\t\t|" + (amount) + "\t\t|" + getTotalPrice() + "\t|" + "\n" + "|" + "-Promo" + "\t\t" + (promo) + "\t\t|" + "\t\t|" + "\t\t|";
+    }
 }
