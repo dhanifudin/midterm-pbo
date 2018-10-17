@@ -20,7 +20,11 @@ class DiscountItem extends Item {
         super(nama, price, amount);
         this.discount = discount;
     }
-
+    
+    @Override
+    public float getTotalPrice(){
+       return price*amount-(discount*price*amount); 
+    }
     
     
 }
