@@ -10,5 +10,15 @@ package id.ac.polinema.midterm;
  * @author Bamz Dnr
  */
 public class PromoItem {
+    public float Promo;
     
+    PromoItem(){
+    }
+    
+    PromoItem (String name, float price, int amount, float Promo){
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
+        this.Promo = Promo;
+    }
 }

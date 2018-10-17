@@ -10,5 +10,15 @@ package id.ac.polinema.midterm;
  * @author Bamz Dnr
  */
 public class DiscountItem {
+    public float Discount;
     
+    DiscountItem(){
+    }
+    
+    DiscountItem(String name, float price, int amount, float Discount){
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
+        this.Discount = Discount;
+    }
 }
