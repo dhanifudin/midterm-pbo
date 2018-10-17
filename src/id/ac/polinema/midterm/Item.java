@@ -17,7 +17,7 @@ public class Item {
     
     public Item(String name, float price, int amount) {
         this.name = name;
-        this.price = price;
+        this.price = price; 
         this.amount = amount;
     }
     
