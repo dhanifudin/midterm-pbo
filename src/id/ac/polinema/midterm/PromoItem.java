@@ -9,7 +9,7 @@ package id.ac.polinema.midterm;
  *
  * @author Bamz Dnr
  */
-public class PromoItem {
+public class PromoItem extends Item{
     public float Promo;
     
     PromoItem(){
