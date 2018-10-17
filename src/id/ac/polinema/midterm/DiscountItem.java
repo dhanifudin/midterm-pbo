@@ -18,7 +18,7 @@ public class DiscountItem extends Item{
     }
     
     public float hargaDiskon(){
-        return price - (price*discount);
+        return getTotalPrice() - (float)(getTotalPrice()*discount);
     }
     
     public void setDiscount(float discount){
@@ -27,5 +27,12 @@ public class DiscountItem extends Item{
     
     public float getDiscount (){
         return discount;
+    }
+    
+    @Override
+    public String toString(){
+        tostring = "| "+this.name+"\t\t| "+this.price+"\t| "+this.amount+"\t\t| "+hargaDiskon()+"\t|\n";
+        tostring += "| -Disc"+"\t\t| "+this.discount*100+"%\t\t| "+""+"\t\t| "+"\t\t|";
+        return tostring;
     }
 }

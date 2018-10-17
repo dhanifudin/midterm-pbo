@@ -18,7 +18,7 @@ public class PromoItem extends Item {
     }
     
     public float getPromoItem(){
-        return price - promo;
+        return getTotalPrice() -  promo*amount;
     }
     
     public void setPromo(float promo){
@@ -27,5 +27,11 @@ public class PromoItem extends Item {
     
     public float getPromo (){
         return promo;
+    }
+    
+    public String toString(){
+        tostring = "| "+this.name+"\t\t| "+this.price+"\t| "+this.amount+"\t\t| "+getPromoItem()+"\t|\n";
+        tostring += "| -Promo"+"\t| "+this.promo+"\t| "+""+"\t\t| "+"\t\t|";
+        return tostring;
     }
 }

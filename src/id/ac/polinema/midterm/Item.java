@@ -11,7 +11,7 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-    protected String name;
+    protected String name,tostring;
     protected float price;
     protected int amount;
     
@@ -21,8 +21,8 @@ public class Item {
         this.amount = amount;
     }
     
-    public int getTotalPrice(){
-        return (int)price*amount;
+    public float getTotalPrice(){
+        return price*amount;
     }
     
     public void setName(String name){
@@ -48,4 +48,10 @@ public class Item {
     public int getAmount(){
         return amount;
     }
+    
+    @Override
+    public String toString(){
+        tostring = "| "+this.name+"\t\t| "+this.price+"\t| "+this.amount+"\t\t| "+getTotalPrice()+"\t|";
+        return tostring;
+    }  
 }
