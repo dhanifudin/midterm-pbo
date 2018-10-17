@@ -10,10 +10,37 @@ package id.ac.polinema.midterm;
  * @author MEUTIA KHANANDIYA
  */
 public class PromoItem {
+    private String name;
+    private float price;
+    private int amount;
     private float promo;
-    
-    public PromoItem(String name, float price, int amount, float promo){
+
+    public PromoItem(String name, float price, int amount, float promo) {
         this.promo = promo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 
     public float getPromo() {
@@ -23,4 +50,10 @@ public class PromoItem {
     public void setPromo(float promo) {
         this.promo = promo;
     }
-}
+        
+        public float PromoItem(){
+            promo = (price * amount) - promo;
+            return promo;
+        }
+    }
+

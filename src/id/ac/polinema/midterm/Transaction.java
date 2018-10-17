@@ -10,6 +10,7 @@ package id.ac.polinema.midterm;
  * @author MEUTIA KHANANDIYA
  */
 public class Transaction {
+
     //menambahkan atribut bersifat private
     private Item item;
     private DiscountItem discountItem;
@@ -44,15 +45,14 @@ public class Transaction {
     public void setPromoItem(PromoItem promoItem) {
         this.promoItem = promoItem;
     }
-    
-    
-	public void print() {
-		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
-		System.out.println("|---------------------------------------------------------------|");
-		System.out.println(item);
-		System.out.println(discountItem);
-		System.out.println(promoItem);
-		System.out.println("|---------------------------------------------------------------|");
-	}
-	
+
+    public void print() {
+        System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
+        System.out.println("|---------------------------------------------------------------|");
+        System.out.println(item);
+        System.out.println(discountItem);
+        System.out.println(promoItem);
+        System.out.println("|---------------------------------------------------------------|");
+    }
+
 }

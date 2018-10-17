@@ -1,22 +1,19 @@
 package id.ac.polinema.midterm;
 
-
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author MEUTIA KHANANDIYA
  */
 public class Item {
+
     protected String name;
     protected float price;
     protected int amount;
-   
 
     public Item(String name, float price, int amount) {
         this.name = name;
@@ -24,9 +21,6 @@ public class Item {
         this.amount = amount;
     }
 
-    public String toString() {
-        return "Item{" + "name=" + name + ", price=" + price + ", amount=" + amount + '}';
-    }
 
     public String getName() {
         return name;
@@ -50,6 +44,12 @@ public class Item {
 
     public void setAmount(int amount) {
         this.amount = amount;
+        
     }
     
+    @Override
+    public String toString(){
+        return name;
+    }
+
 }
