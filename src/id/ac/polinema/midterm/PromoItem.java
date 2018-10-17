@@ -24,7 +24,7 @@ public class PromoItem extends Item {
     }
     
     public String toString(){
-        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getTotalPrice()+"\t|\n|-Promo\t\t/|"+promo+"%\t|\t\t|\t\t|";
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getTotalPrice()+"\t|\n|-Promo\t\t|"+promo+"%\t|\t\t|\t\t|";
     }
     
 }
