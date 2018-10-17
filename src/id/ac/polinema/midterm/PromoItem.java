@@ -16,12 +16,15 @@ public class PromoItem extends Item{
         super(name, price, amount);
         this.promo = promo;
     }
+    //membuat konstruktor menggunakan super
     
     public float getTotalPrice(){
         return (amount*price)-(promo*amount);
     }
+    //menghitung harga totalnya
     
     public String toString(){
         return "|"+name+"\t\t"+"|"+price+"\t|"+amount+"\t\t"+"|"+getTotalPrice()+"\t|"+"\n|-promo"+"\t\t"+"|"+promo+"\t\t|\t\t|\t\t|";
     }
+    //menampilkan perhitungan diatas dengan tatanan diatas
 }
