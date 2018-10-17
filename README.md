@@ -27,6 +27,6 @@
   ![Output](./images/output-uts.png)
 
 - Jika anda telah selesai melakukan pengerjaan, lakukan **pull request** melalui
- tombol yang akan muncul di halaman project fork anda!
+ tombol hijau yang akan muncul di sebelah atas kanan halaman project fork anda!
 
 > Lakukan override untuk method `getTotalPrice()` dan juga `toString()`
