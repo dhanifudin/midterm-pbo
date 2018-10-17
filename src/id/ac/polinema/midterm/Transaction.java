@@ -46,13 +46,15 @@ public class Transaction {
         this.promoItem = promoItem;
     }
 
-    public void print() {
-        System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
-        System.out.println("|---------------------------------------------------------------|");
-        System.out.println(item);
-        System.out.println(discountItem);
-        System.out.println(promoItem);
-        System.out.println("|---------------------------------------------------------------|");
-    }
-
+public void print() {
+		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
+		System.out.println("|---------------------------------------------------------------|");
+		System.out.println("|" + item.name + "\t\t|" + item.price + "\t|" + item.amount + "\t\t|" + item.getTotalPrice() + "\t|");
+		System.out.println("|" + discountItem.name + "\t\t|" + discountItem.price + "\t|" + discountItem.amount + "\t\t|" + discountItem.discount + "\t|");
+                System.out.println("-Disc\t\t|" + "5.0 % \t\t|\t\t|\t\t|");
+		System.out.println("|" + promoItem.name + "\t\t|" + promoItem.price + "\t|" + promoItem.amount + "\t\t|" + promoItem.promo + "\t|");
+                System.out.println("-Promo\t\t|" + "2.000.0 \t|\t\t|\t\t|");
+		System.out.println("|---------------------------------------------------------------|");
+	}
+	
 }
