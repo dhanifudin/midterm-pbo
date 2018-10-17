@@ -11,7 +11,11 @@ package id.ac.polinema.midterm;
  */
 class DiscountItem extends Item {
     private float discount;
+    String DiscountItem;
 
+    public DiscountItem() {
+    }
+    
     public DiscountItem(String Name, float Price, int amount,float discount) {
         super(Name, Price, amount);
         this.discount = discount;
@@ -48,7 +52,14 @@ class DiscountItem extends Item {
     public void setAmount(int amount) {
         this.amount = amount;
     }
-    
+    public float DiscountItem()
+    {
+        return (price * amount) - (price * amount* discount);
     }
+    public float disc() {
+        return discount;
+    }
+    
+}
     
 
