@@ -11,22 +11,22 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-    protected String Nama;
+    protected String Name;
     protected float Price;
     protected int amount;
 
-    public Item(String Nama, float Price, int amount) {
-        this.Nama = Nama;
+    public Item(String Name, float Price, int amount) {
+        this.Name = Name;
         this.Price = Price;
         this.amount = amount;
     }
 
-    public String getNama() {
-        return Nama;
+    public String getName() {
+        return Name;
     }
 
-    public void setNama(String Nama) {
-        this.Nama = Nama;
+    public void setName(String Nama) {
+        this.Name = Name;
     }
 
     public float getPrice() {
@@ -45,8 +45,11 @@ public class Item {
         this.amount = amount;
     }
     
+    public float getTotalPrice(){
+        return Price;
+    }
     public String toString(){
-        return Nama ;
+        return Name ;
    
     }
     
