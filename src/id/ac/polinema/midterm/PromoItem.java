@@ -9,14 +9,12 @@ package id.ac.polinema.midterm;
  *
  * @author Angga Maulana A
  */
-class PromoItem {
+class PromoItem extends Item{
     private float promo;
 
-    public PromoItem(float promo) {
+    public PromoItem(float promo, String Nama, float Price, int amount) {
+        super(Nama, Price, amount);
         this.promo = promo;
-    }
-
-    PromoItem(String kopi, int i, int i0, int i1) {
     }
 
     public float getPromo() {
@@ -26,4 +24,29 @@ class PromoItem {
     public void setPromo(float promo) {
         this.promo = promo;
     }
+
+    public String getNama() {
+        return Nama;
+    }
+
+    public void setNama(String Nama) {
+        this.Nama = Nama;
+    }
+
+    public float getPrice() {
+        return Price;
+    }
+
+    public void setPrice(float Price) {
+        this.Price = Price;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+    
 }
