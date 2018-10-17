@@ -17,4 +17,8 @@ public class Item {
 //    Protected adalah kode akses yang membuat suatu data atau method
 //    yang didefinisikan dengan tingkatan akses ini dapat diakses oleh kelas yang memilikinya saja
 //    dan juga kelas-kelas yang masih memiliki keturunan atau Encapsulation data
+
+    Item(String gula, int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
