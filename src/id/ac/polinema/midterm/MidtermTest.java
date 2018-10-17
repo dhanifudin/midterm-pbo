@@ -21,3 +21,4 @@ public class MidtermTest {
 		transaction.print();
 	}
 }
+
