@@ -8,7 +8,7 @@ package id.ac.polinema.midterm;
 
 /**
  *
- * @author dhanifudin
+ * @author MEUTIA KHANANDIYA
  */
 public class MidtermTest {
 

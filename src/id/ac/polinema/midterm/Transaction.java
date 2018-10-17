@@ -7,13 +7,43 @@ package id.ac.polinema.midterm;
 
 /**
  *
- * @author dhanifudin
+ * @author MEUTIA KHANANDIYA
  */
 public class Transaction {
     //menambahkan atribut bersifat private
     private Item item;
     private DiscountItem discountItem;
     private PromoItem promoItem;
+
+    public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
+        this.item = item;
+        this.discountItem = discountItem;
+        this.promoItem = promoItem;
+    }
+
+    public Item getItem() {
+        return item;
+    }
+
+    public void setItem(Item item) {
+        this.item = item;
+    }
+
+    public DiscountItem getDiscountItem() {
+        return discountItem;
+    }
+
+    public void setDiscountItem(DiscountItem discountItem) {
+        this.discountItem = discountItem;
+    }
+
+    public PromoItem getPromoItem() {
+        return promoItem;
+    }
+
+    public void setPromoItem(PromoItem promoItem) {
+        this.promoItem = promoItem;
+    }
     
     
 	public void print() {
