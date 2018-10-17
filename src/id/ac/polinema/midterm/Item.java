@@ -21,12 +21,14 @@ public class Item {
         this.amount = amount;
     }
     
+    //menghitung harga total
     public float getTotalPrice(){
         return amount*price;
     }
     
+    //Menampilkan
     public String toString(){
-        return name+"\t\t"+price+"\t\t"+amount+"\t\t"+getTotalPrice()+"\t|";
+        return "|"+name+"\t\t|"+price+"\t|"+amount+"\t\t|"+getTotalPrice()+"\t|";
     }
     
 }

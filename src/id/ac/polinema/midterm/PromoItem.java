@@ -17,11 +17,13 @@ public class PromoItem extends Item {
         this.promo = promo;
     }
     
-    public float getTotalPrice(){
+    //menghitung total yang dibeli lalu di kurangi promo
+    public float getPromo(){
         return (amount*price)-(promo*amount);
     }
     
+    //menampilkan hasil promo
     public String toString(){
-    return"|"+name+"\t\t"+"|"+price+"\t"+"|"+amount+"\t\t"+"|"+getTotalPrice()+"\t"+"\n|-Promo"+"\t\t"+"|"+promo+"%\t\t|\t\t|\t\t|";
+    return"|"+name+"\t\t"+"|"+price+"\t"+"|"+amount+"\t\t|"+getPromo()+"\t|\n|-Promo\t\t|"+promo+"\t\t|\t\t|\t\t|";
     }
 }
