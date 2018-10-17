@@ -15,6 +15,9 @@ public class Item {
     protected float price;
     protected int amount;
 
+    public Item() {
+    }
+    
     public Item(String name, float price, int amount) {
         this.name = name;
         this.price = price;
