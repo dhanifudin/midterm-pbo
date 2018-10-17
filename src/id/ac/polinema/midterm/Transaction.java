@@ -11,15 +11,15 @@ package id.ac.polinema.midterm;
  */
 public class Transaction {
         private Item item;
-        private PromoItem promoItem;
         private DiscountItem discountItem;
+        private PromoItem promoItem;
 
-    public Transaction(Item item, PromoItem promoitem, DiscountItem discountitem) {
+    public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
         this.item = item;
-        this.promoItem = promoitem;
-        this.discountItem = discountitem;
+        this.discountItem = discountItem;
+        this.promoItem = promoItem;
     }
-        
+   
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
