@@ -16,7 +16,7 @@ public class PromoItem extends Item{
         this.promo = promo;
     }
 
-    public PromoItem(float promo, String name, float price, int amount) {
+    public PromoItem(String name, float price, int amount,float promo) {
         super(name, price, amount);
         this.promo = promo;
     }
