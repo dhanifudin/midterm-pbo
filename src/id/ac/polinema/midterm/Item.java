@@ -28,7 +28,7 @@ public class Item {
     
     public String toString() {
         String param = "";
-        
+        param += "| "+this.name+" \t\t| "+this.price+" \t| "+this.amount+" \t\t| "+getTotalPrice()+" \t|";
         return param;
     }
 }
