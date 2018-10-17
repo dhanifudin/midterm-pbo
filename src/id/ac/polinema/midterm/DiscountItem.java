@@ -14,14 +14,25 @@ public class DiscountItem extends Item{
 
     public DiscountItem(String name, float price, int amount, float discount) {
         super(name, price, amount);
-        this.discount = discount;
+        this.discount = discount*100;
     }
     
     public float getDiscount(){
-        this.discount = (this.discount/100) * (this.price*this.amount);
-        return this.discount;
+        
+        float disc = (this.discount/100) * (this.price*this.amount);
+        return disc;
     }
     
+    
+    @Override
+    public float getTotalPrice(){
+        return this.amount * this.price -getDiscount();
+    } 
+    @Override
+    public String toString(){
+        return "|"+(this.name)+"\t\t|"+(this.price)+"\t|"+(this.amount)+"\t\t"+getTotalPrice()+"\t|"+"\n|-Disc"+"\t\t|"+this.discount+"%\t\t\t";
+    }
+   
     
     
 }
