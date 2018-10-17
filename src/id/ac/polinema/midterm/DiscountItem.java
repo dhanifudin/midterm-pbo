@@ -10,5 +10,17 @@ package id.ac.polinema.midterm;
  * @author MEUTIA KHANANDIYA
  */
 public class DiscountItem {
-    
+    public float discount;
+
+    public DiscountItem(float discount) {
+        this.discount = discount;
+    }
+
+    public float getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(float discount) {
+        this.discount = discount;
+    }
 }
