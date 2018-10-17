@@ -30,7 +30,12 @@ public class PromoItem extends Item{
     }
     @Override
     public String toString(){
-        return "| "+name+"\t\t|"+price+"\t\t"+amount+"\t\t|";
+        return "| "+name+"\t\t|"+price+"\t\t"+amount+"\t\t|"+getTotalPrice()+"\t\t|\n"
+                +"| -Promo \t|"+getPromo()+"\t\t|";
+    }
+    @Override
+    public float getTotalPrice(){
+        return (this.price*this.amount)-(this.amount*getPromo());
     }
     
 }
