@@ -26,6 +26,6 @@ public class Item {
     }
     
     public String toString(){
-        return name+"\t\t"+price+"\t\t"+amount;
+        return name+"\t\t"+price+"\t\t"+amount+"\t\t"+getTotalPrice();
     }
 }
