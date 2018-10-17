@@ -14,21 +14,22 @@ class DiscountItem extends Item{
 
     public DiscountItem(String name, float price, int amount, float discount) {
         super(name, price, amount);
-        this.discount=discount;
+        this.discount=discount*100;
     }
 
     //menghitung diskon
     public float getDiscount() {
-        return (amount*price)*discount;
+        return (amount*price)*discount/100;
     }
     
-    //
-    public float getTotalPrice(){
+    //menghitung total yang dibeli lalu dikurangi diskon
+    public float getTotalDiscount(){
         return price*amount-getDiscount();
     }
     
+    //menampilkan hasil diskon
    public String toString(){
-        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getTotalPrice()+"\t|\n|-Disc\t\t|"+discount+"%\t\t|\t\t|\t\t|";
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getTotalDiscount()+"\t|\n|-Disc\t\t|"+discount+"%\t\t|\t\t|\t\t|";
     }
 
 
