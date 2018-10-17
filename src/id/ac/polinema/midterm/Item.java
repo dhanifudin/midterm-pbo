@@ -21,8 +21,10 @@ public class Item {
     public Item() {
     }
 
-    Item(String gula, int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Item(String name, float price, int amount) {
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
     }
 
     public String getName() {
@@ -47,5 +49,15 @@ public class Item {
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+    
+    @Override
+    public String toString(){
+        return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t| Total \t|";
+    }
+    
+    public void output(){
+        System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
+        System.out.println("| " + getName() + " \t\t| "  + getPrice() + " \t| " + getAmount() + " \t| Total \t|");
     }
 }

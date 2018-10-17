@@ -11,13 +11,12 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class MidtermTest {
+    public static void main(String[] args) {
+	Item item = new Item("Gula", 10000, 2);
+	DiscountItem discountItem = new DiscountItem("Susu", 10000, 2, 0.05f);
+	PromoItem promoItem = new PromoItem("Kopi", 10000, 2, 2000);
 
-	public static void main(String[] args) {
-		Item item = new Item("Gula", 10000, 2);
-		DiscountItem discountItem = new DiscountItem("Susu", 10000, 2, 0.05f);
-		PromoItem promoItem = new PromoItem("Kopi", 10000, 2, 2000);
-
-		Transaction transaction = new Transaction(item, discountItem, promoItem);
-		transaction.print();
-	}
+	Transaction transaction = new Transaction(item, discountItem, promoItem);
+    	transaction.print();
+    }
 }
