@@ -18,15 +18,18 @@ public class DiscountItem extends Item {
     }
     
     private float getDisc() { //Get discount price
-        float disc = (this.discount / 100)* this.price;
+        float total = this.price * this.amount;
+        float disc = (this.discount / 100)* total;
         return disc;
     }
     
-    private float getTotal() { //Get price after discount
-        return this.price - getDisc();
+    public float getTotalPrice() { //Get total after discount
+        float total = this.price * this.amount;
+        total = total - getDisc();
+        return total;
     }
     
-    public String toString() {
+    public String toString() { //Set Output value for this.Class
         String param = "";
         
         return param;
