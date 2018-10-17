@@ -9,12 +9,12 @@ package id.ac.polinema.midterm;
  *
  * @author iloops
  */
-public class PromoItem extends Item {
-    private float promo;
+public class DiscountItem extends Item{
+    private float discount;
 
-    public PromoItem(float promo, String nama, float price, int amount) {
+    public DiscountItem(float discount, String nama, float price, int amount) {
         super(nama, price, amount);
-        this.promo = promo;
+        this.discount = discount;
     }
     
     
