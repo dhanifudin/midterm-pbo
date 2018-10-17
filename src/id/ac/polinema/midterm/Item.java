@@ -52,4 +52,8 @@ public class Item {
     public float getTotalPrice(){
         return price;
     }
+    
+    public String toString(){
+        return name;
+    }
 }
