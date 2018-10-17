@@ -11,5 +11,10 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-
+    protected String name;
+    protected float price;
+    protected int amount;
+//    Protected adalah kode akses yang membuat suatu data atau method
+//    yang didefinisikan dengan tingkatan akses ini dapat diakses oleh kelas yang memilikinya saja
+//    dan juga kelas-kelas yang masih memiliki keturunan atau Encapsulation data
 }
