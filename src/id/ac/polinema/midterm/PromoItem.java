@@ -18,7 +18,11 @@ class PromoItem extends Item{
 
     public PromoItem(String name, float price, int amount, float promo) {
         super(name, price, amount);
-        this.promo = (price - promo) * amount;
+        this.promo = promo;
+    }
+    
+    public float setPromoTotal(){
+        return (price - promo) * amount;
     }
     
     
