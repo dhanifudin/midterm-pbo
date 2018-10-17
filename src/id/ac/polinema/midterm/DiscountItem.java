@@ -16,4 +16,19 @@ public class DiscountItem extends Item {
         super(name, price, amount); //Initialize super-class atts values
         this.discount = disc; //Initialize promo attr value
     }
+    
+    private float getDisc() { //Get discount price
+        float disc = (this.discount / 100)* this.price;
+        return disc;
+    }
+    
+    private float getTotal() { //Get price after discount
+        return this.price - getDisc();
+    }
+    
+    public String toString() {
+        String param = "";
+        
+        return param;
+    }
 }
