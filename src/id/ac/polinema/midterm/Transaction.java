@@ -34,6 +34,7 @@ public class Transaction extends Item{
                 System.out.print(promoItem.price+"\t\t");
                 System.out.print(promoItem.amount+"\t\t");
                 System.out.println(promoItem.getTotalPromo());
+                System.out.println("-Promo\t\t"+promoItem.getPromo());
 		System.out.println("|---------------------------------------------------------------|");
 	}
 	
