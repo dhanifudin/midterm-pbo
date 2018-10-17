@@ -9,14 +9,14 @@ package id.ac.polinema.midterm;
  *
  * @author jajal
  */
-public class Discountitem extends Item{
+public class DiscountItem extends Item{
     private float discount;
 
-    public Discountitem(float discount) {
-        this.discount = discount;
-    }
+//    public Discountitem(float discount) {
+//        this.discount = discount;
+//    }
 
-    public Discountitem(float discount, String name, float price, int amount) {
+    public DiscountItem(float discount, String name, float price, int amount) {
         super(name, price, amount);
         this.discount = discount;
     }
