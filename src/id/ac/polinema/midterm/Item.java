@@ -12,4 +12,7 @@ package id.ac.polinema.midterm;
  */
 public class Item {
 
+    protected String name;
+    protected float price;
+    protected int amount;
 }
