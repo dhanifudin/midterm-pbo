@@ -5,54 +5,13 @@
  */
 package id.ac.polinema.midterm;
 
-
-class DiscountItem {
-    
-    private float discount;
-    private String nama;
-    private float price;
-    private int amount;
-
-    public DiscountItem() {
+    public class DiscountItem extends Item{
+        private float discount;
+   
+        public DiscountItem(){
     }
-
-    public DiscountItem(float discount, String nama, float price, int amount) {
-        this.discount = discount;
-        this.nama = nama;
-        this.price = price;
-        this.amount = amount;
+        public DiscountItem(String name, float price, int amount, float promo){
+            super(name, price, amount);
+            this.discount = discount;
+        }
     }
-
-    public float getDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(float discount) {
-        this.discount = discount;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-    }
-    
