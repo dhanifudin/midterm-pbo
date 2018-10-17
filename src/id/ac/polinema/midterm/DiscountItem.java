@@ -53,7 +53,7 @@ class DiscountItem extends Item{
     public void setAmount(int amount) {
         this.amount = amount;
     }
-     //public float DiscountItem(){
-      //  discount = (price*amount) - (price* amount * discount);
-        //return discount;
+    public float DiscountItem(){
+        return (price*amount) - (price*amount*discount);
     }
+}
