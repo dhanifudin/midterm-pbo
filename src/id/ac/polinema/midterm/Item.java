@@ -9,6 +9,7 @@ package id.ac.polinema.midterm;
 /**
  *
  * @author dhanifudin
+ * next by Taufik
  */
 public class Item {
     protected String name;
@@ -25,13 +26,11 @@ public class Item {
     }
     
     public float getTotalPrice(){
-        float total = 0;
-        total = (amount * price) - (price * amount);
-        return total;
+        return (int) amount * price;
     }
     
     @Override
     public String toString(){
-        return
+        return name +" \t\t "+price+" \t\t "+amount+" \t\t "+(price * amount);
     }
 }
