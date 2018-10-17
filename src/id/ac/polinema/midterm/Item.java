@@ -40,7 +40,7 @@ public class Item {
     public void setAmount(int amount) {
         this.amount = amount;
     }
-
+//getter untuk mendapatkan nilai total harga//
     public float getTotalPrice(){
     return price * amount;
     }

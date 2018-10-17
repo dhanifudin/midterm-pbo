@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 package id.ac.polinema.midterm;
-
+//tambahkan ekstends karna Transaction anak dari Item//
 public class Transaction extends Item{
     private Item item;
     private DiscountItem discountItem;
     private PromoItem promoItem;
-
+//untuk mendapatkan nilai dari main class//
     public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
         this.item = item;
         this.discountItem = discountItem;
@@ -17,7 +17,7 @@ public class Transaction extends Item{
     }
     
     
-    
+    //untuk output hasil//
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");

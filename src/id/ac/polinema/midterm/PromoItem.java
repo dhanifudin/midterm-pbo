@@ -9,6 +9,7 @@ package id.ac.polinema.midterm;
  *
  * @author ALDO
  */
+//tambahkan ekstends karna PromoItem dari Item//
 public class PromoItem extends Item{
     private float promo;
 
@@ -16,11 +17,11 @@ public class PromoItem extends Item{
         super(name, price, amount);
         this.promo = promo;
     }
-    
+    //untuk mendapatkan total promo//
     public float getTotalPromo(){
     return (price*amount)-(promo*amount);
     }
-
+//untuk mendapatkan nilai promo yang di private//
     public float getPromo() {
         return promo;
     }
