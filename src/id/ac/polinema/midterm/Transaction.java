@@ -20,7 +20,7 @@ public class Transaction {
         this.promoItem = promoItem;
     }
     
-    public Item getItem() {
+    public Item getItem() { // mengambil nilai item
         return item;
     }
     public DiscountItem getDiscountItem() { // mengambil nilai dari diskonItem
