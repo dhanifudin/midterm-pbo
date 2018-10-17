@@ -18,4 +18,17 @@ public class DiscountItem extends Item {
         super(name, price, amount);
         this.discount = discount;
     }
+
+    public float getDiscount() {
+        return discount;
+    }
+    //method untuk menghitung harga yang memiliki diskon
+    public float getTotalPrice(){
+        return price * amount - getDiscount();
+    }
+    
+    //method untuk menampilkan
+    public String toString(){
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+getTotalPrice()+"\t|\n|-Discount\t|"+discount*100+"%\t\t|\t\t|\t\t|";
+    }
 }

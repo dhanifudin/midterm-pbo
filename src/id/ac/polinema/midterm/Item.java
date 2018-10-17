@@ -49,12 +49,10 @@ public class Item {
     
     //menambahkan method
     public float getTotalPrice(){
-        float totalprice = price * amount;
-        return totalprice;
+        return price * amount;
     }
-    //menambahkan method
+    //menambahkan method 
     public String toString(){
-        return name;
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+(price*amount)+"\t|";
     }
-
 }
