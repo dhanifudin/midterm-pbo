@@ -29,4 +29,13 @@ public class DiscountItem extends Item{
     public void setAmount(int amount) {
         this.amount = amount;
     } 
+    @Override
+    public String toString(){
+        return "| "+name+"\t\t| "+price+"\t\t|"+amount+"\t\t|"+this.getTotalPrice()+
+                "|- Disc\t|"+(getDiscount()*100)+"%\t\t|";
+    }
+    @Override
+    public float getTotalPrice(){
+        return (this.price*this.amount)-((this.price*this.amount)*getDiscount());
+    }
 }
