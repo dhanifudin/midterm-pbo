@@ -11,5 +11,23 @@ public class PromoItem extends Item{
         super(name, price, amount);
         this.promo = promo;
     }
+
+    public void setPromo(float promo) {
+        this.promo = promo;
+    }
+
+    public float getPromo() {
+        return promo;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public float getPrice() {
+        return price;
+    }
+    public int getAmount() {
+        return amount;
+    }
     
 }
