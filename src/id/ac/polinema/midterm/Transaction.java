@@ -10,7 +10,7 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Transaction {
-
+    
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
