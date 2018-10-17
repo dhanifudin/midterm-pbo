@@ -31,6 +31,6 @@ public class Item {
     // pembuatan method toString
     @Override
     public String toString(){
-        return name+"|"+(name)+"\t\t|"+(amount)+"\t\t|"+(price * amount)+"\t|";
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+(price * amount)+"\t|";
     }
 }
