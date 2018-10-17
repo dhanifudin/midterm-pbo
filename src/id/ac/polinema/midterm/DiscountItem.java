@@ -11,6 +11,8 @@ package id.ac.polinema.midterm;
  */
 public class DiscountItem extends Item{
     private float discount;
+//    Private adalah kode yang sesuai dengan namanya, akses ini bersifat private. dengan kata lain data maupun method hanya dapat diakses
+//    oleh kelas yang dimilikinya saja.
 
     public DiscountItem() {
     }
@@ -23,35 +25,10 @@ public class DiscountItem extends Item{
     public float getDiscount() {
         return discount;
     }
+//    getter adalah method yang tugasnya untuk mengambil data dari dalam objek.
 
-    public void setDiscount(float discount) {
-        this.discount = discount;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-    
+    @Override
+//    Override bisa mengubah variabel yang ada di parentclass (parent/induk).
     public float getTotalPrice(){
         return getPrice()*getAmount() - getPrice()*getAmount()*getDiscount();
     }

@@ -31,26 +31,14 @@ public class Item {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public float getPrice() {
         return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
     }
 
     public int getAmount() {
         return amount;
     }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-    
+   
     public float getTotalPrice(){
         return getPrice()*getAmount();
     }
@@ -59,4 +47,5 @@ public class Item {
     public String toString(){
         return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t\t| " + getTotalPrice() + " \t|";
     }
+//    Method ini digunakan untuk mendapatkan objek String yang mewakili nilai dari Nomor Object.
 }

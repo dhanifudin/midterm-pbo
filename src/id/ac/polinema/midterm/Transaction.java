@@ -20,30 +20,18 @@ public class Transaction {
         this.promoItem = promoItem;
     }
 
-    public Item getItem() {
-        return item;
-    }
-
     public void setItem(Item item) {
         this.item = item;
-    }
-
-    public DiscountItem getDiscountItem() {
-        return discountItem;
     }
 
     public void setDiscountItem(DiscountItem discountItem) {
         this.discountItem = discountItem;
     }
 
-    public PromoItem getPromoItem() {
-        return promoItem;
-    }
-
     public void setPromoItem(PromoItem promoItem) {
         this.promoItem = promoItem;
     }
-    
+
     public void print() {
 	System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 	System.out.println("|---------------------------------------------------------------|");

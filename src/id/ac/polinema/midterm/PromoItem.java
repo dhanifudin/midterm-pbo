@@ -11,6 +11,7 @@ package id.ac.polinema.midterm;
  */
 public class PromoItem extends Item{
     private float promo;
+    private float totalPromo;
 
     public PromoItem() {
     }
@@ -18,42 +19,21 @@ public class PromoItem extends Item{
     public PromoItem(String name, float price, int amount, float promo){
         super(name, price, amount);
         this.promo = promo;
+        getTotalPromo();
     }
-
+    
+//    Menghitung total promo
+    private void getTotalPromo(){
+        totalPromo = getPromo()*getAmount();
+    }
+    
     public float getPromo() {
         return promo;
     }
-
-    public void setPromo(float promo) {
-        this.promo = promo;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
     
+    @Override
     public float getTotalPrice(){
-        return getPrice()*getAmount() - getPromo()*getAmount();
+        return getPrice()*getAmount() - totalPromo;
     }
     
     @Override
