@@ -29,7 +29,7 @@ public class DiscountItem extends Item{
     //menghitung jumlahnya
     
     public String toString(){
-        return "|"+name+"\t\t"+"|"+price+"\t"+"|"+amount+"\t\t"+"|"+getTotalPrice()+"\t|"+"\n|-Disc"+"\t\t"+"|"+discount*100+"%\t\t|\t\t|\t\t";
+        return "|"+name+"\t\t"+"|"+price+"\t"+"|"+amount+"\t\t"+"|"+getTotalPrice()+"\t|"+"\n|-Disc"+"\t\t"+"|"+discount*100+"%\t\t|\t\t|\t\t|";
     }
     //untuk menampilkan dengan tatanan seperti diatas
 }

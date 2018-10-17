@@ -26,6 +26,6 @@ public class Item {
     }
     
     public String toString(){
-        return (name)+"\t\t"+(price)+" \t"+(amount)+"\t\t"+(price*amount)+"\t";
+        return "|"+(name)+"\t\t"+"|"+(price)+" \t"+"|"+(amount)+"\t\t"+"|"+(price*amount)+"\t|";
     }
 }
