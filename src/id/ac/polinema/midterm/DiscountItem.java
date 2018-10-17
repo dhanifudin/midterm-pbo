@@ -14,7 +14,7 @@ public class DiscountItem extends Item {
     
     public DiscountItem(String name, float price, int amount, float disc) {
         super(name, price, amount); //Initialize super-class atts values
-        this.discount = disc; //Initialize promo attr value
+        this.discount = disc * 100; //Initialize promo attr value
     }
     
     private float getDisc() { //Get discount price
@@ -32,7 +32,7 @@ public class DiscountItem extends Item {
     public String toString() { //Set output value
         String param = "";
         param += "| "+this.name+" \t\t| "+this.price+" \t| "+this.amount+" \t\t| "+getTotalPrice()+" \t|\n";
-        param += "| -Discount \t| "+this.discount+"% \t|  \t\t|  \t\t|";
+        param += "| -Discount \t| "+this.discount+"% \t\t|  \t\t|  \t\t|";
         return param;
     }
 }
