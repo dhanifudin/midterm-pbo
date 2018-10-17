@@ -12,7 +12,8 @@ package id.ac.polinema.midterm;
 public class PromoItem extends Item{
     public float promo;
 
-    public PromoItem(String name, float price, int amount, float discount) {
-        super(name, price, amount);
+    public PromoItem(String name, float price, int amount, float promo) {
+        super(name, price, amount); //Initialize super-class attrs value
+        this.promo = promo; //Initialize promo attr value
     }
 }
