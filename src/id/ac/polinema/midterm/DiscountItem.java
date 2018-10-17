@@ -9,10 +9,11 @@ package id.ac.polinema.midterm;
  *
  * @author Sintongs
  */
-public class DiscountItem extends DiscountItem{
+public class DiscountItem extends Item{
        private float discount;
 
-    public DiscountItem(float discount) {
-        this.discount = discount;
+    public DiscountItem(String name, float price, int amount) {
+        super(name, price, amount);
     }
+
 }

@@ -12,7 +12,7 @@ package id.ac.polinema.midterm;
 public class PromoItem {
     private float promo;
 
-    public PromoItem(float promo) {
+    public PromoItem(String name, float price, int amount, float promo) {
         this.promo = promo;
     }
     
