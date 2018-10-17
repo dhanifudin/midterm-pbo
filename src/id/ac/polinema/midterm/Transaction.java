@@ -19,7 +19,16 @@ public class Transaction {
         this.discountItem = discountItem;
         this.promoItem = promoItem;
     }
-    
+
+    public Item getItem() {
+        return item;
+    }
+    public DiscountItem getDiscountItem() {
+        return discountItem;
+    }
+    public PromoItem getPromoItem() {
+        return promoItem;
+    }
     
     
 	public void print() {
