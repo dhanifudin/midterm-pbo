@@ -21,14 +21,13 @@ public class Item {
         this.amount = amount;
     }
     
-    
     public float getTotalPrice(){
-        return (int)(price*amount);
+        return price*amount;
     }   
     
   
     public String toString(){
-       return "|"+(name)+"\t|"+(price)+"\t\t|"+(amount)+"\t\t|"+(price*amount)+" \t|";
+       return "|"+name+"\t|"+price+"\t\t|"+amount+"\t\t|"+getTotalPrice()+" \t|";
     }
     
 }
