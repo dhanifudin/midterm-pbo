@@ -26,19 +26,19 @@ class PromoItem extends Item{
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String Name) {
-        this.Name = Name;
+        this.name = Name;
     }
 
     public float getPrice() {
-        return Price;
+        return price;
     }
 
     public void setPrice(float Price) {
-        this.Price = Price;
+        this.price = Price;
     }
 
     public int getAmount() {
