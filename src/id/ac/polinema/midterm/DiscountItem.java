@@ -18,15 +18,21 @@ public class DiscountItem extends Item{
         this.discount = discount;
     }
     
+    //menambah getter
+    public float getDiscount() {
+        return super.getTotalPrice()*discount;
+    }
+    
     //menambahkan method total harga
     public float getTotalPrice(){
-
-       return totalprice; 
+       return amount*price-getDiscount(); 
     }
     
     //menambahkan method untuk menampilkan isi
     public String toString(){
-
+        return "|" +nama +"\t\t" +"|" +price +"\t" +"|"
+                +amount +"\t\t" +"|" +getTotalPrice() +"\t|"
+                +"\n|-Disc" +"\t\t" +"|" +discount*100 +"%" +"\t\t|" +"\t\t|" +"\t\t|";
     }
     
     

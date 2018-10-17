@@ -19,12 +19,14 @@ public class PromoItem extends Item{
     
     //menambahkan method total harga
     public float getTotalPrice(){
-
+        return super.getTotalPrice()-(promo * amount);
     }
     
     //menambahkan method untuk menampilkan isi
     public String toString(){
-
+        return "|" +nama +"\t\t" +"|" +price +"\t" +"|" +amount
+                +"\t\t" +"|" +getTotalPrice() +"\t|" +"\n|-promo"
+                +"\t\t" +"|" +promo +"\t\t|\t\t|\t\t|";
     }
     
 }

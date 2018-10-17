@@ -24,12 +24,12 @@ public class Item {
     
     //menambahkan method total harga
     public float getTotalPrice(){
-       float totalprice = price * amount;
-       return totalprice; 
+       return price*amount; 
     }
     
     //menambahkan method untuk menampilkan isi
     public String toString(){
-        return ;
+        return "|" +nama +"\t\t" +"|" +price +"\t" 
+                +"|" +amount +"\t\t" +"|" +getTotalPrice() +"\t|";
     }
 }
