@@ -17,4 +17,7 @@ public class DiscountItem extends Item{
         this.discount = discount;
     }
     
+    public float hargaDiskon(){
+        
+    }
 }
