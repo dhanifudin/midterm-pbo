@@ -15,11 +15,11 @@ public class DiscountItem extends Item {
 
     public DiscountItem(String name, float price, int amount , float discount) {
         super(name, price, amount);
-        this.discount = discount ;
+        this.discount = discount * 100 ;
     }
     
     public float getDiscount() {
-        return (amount * price) * discount ;
+        return (amount * price) * discount / 100 ;
     }
     
     public float getTotalPrice() {
