@@ -16,4 +16,14 @@ public class PromoItem extends Item{
         super(name, price, amount); //Initialize super-class attrs value
         this.promo = promo; //Initialize promo attr value
     }
+    
+    public float getTotal() { //Get price after total
+        return this.price - this.promo;
+    }
+    
+    public String toString() {
+        String param = "";
+        
+        return param;
+    }
 }
