@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package id.ac.polinema.midterm;
+package MidTerm;
 
 /**
  *
  * @author Arifanny Ramadhan Sukma / 1741720217 / TI=2A
  */
-public class Promoitem extends Item{
+public class PromoItem extends Item {
     private float promo;
 
-    public Promoitem(String name, float price, int amount, float promo) {
-        super(name, price, amount);
-        this.promo = promo;
+    public PromoItem(String name, float price, int amount, float promo) {
+    super(name, price, amount);
+    this.promo = promo;
     }
+    
+    
 }
