@@ -14,4 +14,44 @@ package id.ac.polinema.midterm;
             super(name, price, amount);
             this.discount = discount;
         }
+
+    public float getDiscount() {
+        return discount;
     }
+
+    public void setDiscount(float discount) {
+        this.discount = discount;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+    
+        public float DiscountItem(){
+            return (price*amount)-(price*amount*discount); 
+        }
+        public float  disc(){
+            return discount * 100;
+        }
+        }
+    
