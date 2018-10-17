@@ -13,9 +13,9 @@ package id.ac.polinema.midterm;
 public class MidtermTest {
 
 	public static void main(String[] args) {
-		Item item = new Item("  Pocari Sweat\t  ", 8000, 3);
-		DiscountItem discountItem = new DiscountItem("  Big Cola\t  ", 4000, 2, 0.05f);
-		PromoItem promoItem = new PromoItem("  Nescaffe\t  ", 5500, 4, 1000);
+		Item item = new Item("Pocari Sweat", 8000, 3);
+		DiscountItem discountItem = new DiscountItem("Big Cola", 4000, 2, 0.05f);
+		PromoItem promoItem = new PromoItem("Nescaffe", 5500, 4, 1000);
 
 		Transaction transaction = new Transaction(item, discountItem, promoItem);
 		transaction.print();

@@ -20,16 +20,15 @@ public class Item {
         this.price = price;
         this.amount = amount;
     }
-
+    
+    
     public float getTotalPrice(){
-        return (price*amount);
+        return (int)(price*amount);
     }   
     
+  
     public String toString(){
-        this.name = name;
-        this.price = price;
-        this.amount = amount;
-        return(name+price+amount);
+       return "|"+(name)+"\t|"+(price)+"\t\t|"+(amount)+"\t\t|"+(price*amount)+" \t|";
     }
     
 }
