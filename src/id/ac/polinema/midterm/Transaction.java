@@ -28,8 +28,9 @@ public class Transaction {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
 		System.out.println("|" + item.name + "\t\t|" + item.price + "\t|" + item.amount +"\t\t|" + item.getTotalPrice() +"\t|");
-		System.out.println("|" + discountItem.name + "\t\t|" + discountItem.price + "\t|" + discountItem.amount + "\t\t|" + discountItem+"\t");
-		System.out.println(promoItem);
+		System.out.println("|" + discountItem.name + "\t\t|" + discountItem.price + "\t|" + discountItem.amount + "\t\t|" + discountItem.setDiskon()+"\t");
+                System.out.println("|" + "-Disc \t\t|"  + discountItem.getDiskon()+"%");
+		System.out.println("|" );
 		System.out.println("|---------------------------------------------------------------|");
 	}
 	
