@@ -9,8 +9,10 @@
 package id.ac.polinema.midterm;
 
 
-public class PromoItem {
+public class PromoItem extends Item{
     public float promo;
-    
-    public PromoItem(String name, float price, )
+
+    public PromoItem(String name, float price, int amount, float discount) {
+        super(name, price, amount);
+    }
 }
