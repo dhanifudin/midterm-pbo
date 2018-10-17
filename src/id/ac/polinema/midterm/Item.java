@@ -10,6 +10,9 @@ package id.ac.polinema.midterm;
  *
  * @author dhanifudin
  */
-public class Item {
-    
+public class Item 
+{
+    protected String name, tostring;
+    protected float price;
+    protected int amount;
 }
