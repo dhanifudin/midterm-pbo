@@ -43,7 +43,7 @@ public class Item {
         return "| "+name+"\t\t| "+price+"\t|"+amount+"\t\t|"+(price*amount);        
     }
     public float getTotalPrice(){ // override
-        return 0;
+        return "- Disc "+(price*amount*0.5f);
 
     }
 }
