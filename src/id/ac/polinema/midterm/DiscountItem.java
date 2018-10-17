@@ -9,6 +9,28 @@ package id.ac.polinema.midterm;
  *
  * @author Yulica
  */
-public class DiscountItem {
+public class DiscountItem extends Item{
+    private float discount;
+    
+    //tambahkan constructor
+    public DiscountItem(String nama, float price, int amount, float discount) {
+        super(nama, price, amount);
+        this.discount = discount;
+    }
+    
+    //menambahkan method total harga
+    public float getTotalPrice(){
+       float totalprice = price - discount;
+       return totalprice; 
+    }
+    
+    //menambahkan method untuk menampilkan isi
+    public String toString(){
+        return nama;
+    }
+    
+    
+    
+    
     
 }
