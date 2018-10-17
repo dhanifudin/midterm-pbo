@@ -8,7 +8,7 @@ package id.ac.polinema.midterm;
 
 /**
  *
- * @author dhanifudin
+ * @author Administrator
  */
 public class Item {
     protected String name;
