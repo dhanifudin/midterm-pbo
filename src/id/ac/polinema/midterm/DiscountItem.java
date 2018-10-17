@@ -18,15 +18,15 @@ public class DiscountItem extends Item{
     }
 
     public float getDiscount() {
-        return price*discount;
+        return (amount*price)*discount;
     }
     
     
     public float getTotalPrice(){
-        return price-getDiscount();
+        return amount*price-getDiscount();
     }
     
     public String toString(){
-        return name+"\t\t"+price+"\t\t"+amount+"\t\t"+getTotalPrice()+"\n-Disc"+"\t\t"+discount;
+        return name+"\t\t"+price+"\t\t"+amount+"\t\t"+getTotalPrice()+"\n-Disc"+"\t\t"+discount*100+"%";
     }
 }

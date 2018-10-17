@@ -17,12 +17,12 @@ public class PromoItem extends Item{
         this.promo = promo;
     }
     
-    public float getTotalPrice(float promo, float price){
-        return price-promo;
+    public float getTotalPrice(){
+        return (amount*price)-(promo*amount);
     }
     
     public String toString(){
-        return super.toString()+"\t\t"+getTotalPrice();
+        return name+"\t\t"+price+"\t\t"+amount+"\t\t"+getTotalPrice()+"\n-promo"+"\t\t"+promo;
     }
     
 }
