@@ -11,12 +11,25 @@ package id.ac.polinema.midterm;
  */
 public class Transaction {
 
+	private Item item;
+        private PromoItem promoItem;
+        private DiscountItem discountItem;
+
+    public Transaction(Item item,  DiscountItem discountItem, PromoItem promoItem) {
+        this.item = item;
+        this.promoItem = promoItem;
+        this.discountItem = discountItem;
+    }
+        
+        
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
-		System.out.println(item);
-		System.out.println(discountItem);
-		System.out.println(promoItem);
+		System.out.println("|"+item.name +"\t\t|"+item.price+"\t|"+item.amount+"\t\t|"+item.getTotalPrice()+"\t|");
+		System.out.println("|"+discountItem.name+"\t\t|"+discountItem.price+"\t|"+discountItem.amount+"\t\t|"+discountItem.getTotalPrice()+"\t|");
+                System.err.println("|-Disc \t\t|" +discountItem.disc()+"%");
+		System.out.println("|"+promoItem.name+"\t\t|"+promoItem.price+"\t|"+promoItem.amount+"\t\t|"+promoItem.getTotalPrice()+"\t|");
+                System.err.println("|-Promo \t|"+ promoItem.promo());
 		System.out.println("|---------------------------------------------------------------|");
 	}
 	
