@@ -14,6 +14,10 @@ public class Item {
     protected String Name;
     protected float Price;
     protected int amount;
+    
+    public Item(){
+        
+    }
 
     public Item(String Name, float Price, int amount) {
         this.Name = Name;
