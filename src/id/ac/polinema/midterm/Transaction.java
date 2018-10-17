@@ -10,6 +10,12 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Transaction {
+    private Item item;
+    private DiscountItem discountItem;
+    private PromoItem promoItem;
+
+    Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
+    }
 
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
