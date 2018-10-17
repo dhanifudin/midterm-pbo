@@ -16,13 +16,18 @@ public class PromoItem extends Item{
         super(name, price, amount);
         this.promo = promo;
     }
-    
+    //method ini digunakan untuk mendapatkan total harga akhir setelah mendapat potongan promo
+    @Override
     public float getTotalPrice(){
-        return (amount*price)-(promo*amount);
+        return (this.amount*this.price)-(this.promo*this.amount);
     }
-    
+    //method ini digunakan untuk menampilkan item
+    @Override
     public String toString(){
-        return "|"+name+"\t\t"+"|"+price+"\t"+"|"+amount+"\t\t"+"|"+getTotalPrice()+"\t|"+"\n|-promo"+"\t\t"+"|"+promo+"\t\t|\t\t|\t\t|";
+        String print="";
+        print+= "|"+this.name+"\t\t"+"|"+this.price+"\t"+"|"+this.amount+"\t\t"+"|"+this.getTotalPrice()+"\t|";
+        print+= "\n|-promo"+"\t\t"+"|"+this.promo+"\t\t|\t\t|\t\t|";
+        return print;
     }
     
 }
