@@ -18,7 +18,7 @@ public class PromoItem extends Item{
         return total;
     }
     
-    //untuk menghitung total harga dikali dengan jumlah barang
+    //untuk menghitung total harga dikali dengan jumlah barang.
     
     public float Getpromo(){
         float promo = this.amount*this.promo;
