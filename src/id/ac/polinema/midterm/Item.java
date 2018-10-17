@@ -25,4 +25,10 @@ public class Item {
         float total = this.price * this.amount;
         return total;
     }
+    
+    public String toString() {
+        String param = "";
+        
+        return param;
+    }
 }
