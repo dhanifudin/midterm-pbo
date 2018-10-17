@@ -51,7 +51,7 @@ public class Item {
     
     
     public float getTotalPrice(){
-        return price;
+        return price*amount;
         
     }
     
