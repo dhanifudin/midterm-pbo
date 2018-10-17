@@ -31,6 +31,7 @@ public class PromoItem extends Item{
         return "| "+name+"\t\t| "+price+"\t|"+amount+"\t\t|"+getTotalPrice()+"\t|\n"
                 +"| -Promo \t| "+getPromo()+"\t|\t\t|\t\t|";
     }
+    
     @Override
     public float getTotalPrice(){
         return (this.price*this.amount)-(this.amount*getPromo());
