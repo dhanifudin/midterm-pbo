@@ -46,7 +46,8 @@ public class Item {
     }
     
     public String toString(){
-        return Price * amount;
+        return Nama ;
+   
     }
     
     
