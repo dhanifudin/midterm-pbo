@@ -30,6 +30,6 @@ public class Item {
         this.name = name;
         this.price = price;
         this.amount = amount;
-        return (name,price,amount);
+        return (name+price+amount);
     }
 }
