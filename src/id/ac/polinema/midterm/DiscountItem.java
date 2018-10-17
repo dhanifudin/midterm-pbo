@@ -15,7 +15,7 @@ public class DiscountItem extends Item{
     public DiscountItem() {
     }
 
-    public DiscountItem(float discount, String name, float price, int amount) {
+    public DiscountItem(String name, float price, int amount, float promo) {
         super(name, price, amount);
         this.discount = discount;
     }
