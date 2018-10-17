@@ -11,6 +11,7 @@ package id.ac.polinema.midterm;
  */
 public class Transaction {
 
+    private 
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
