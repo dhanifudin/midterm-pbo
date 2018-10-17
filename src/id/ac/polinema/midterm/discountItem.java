@@ -30,7 +30,7 @@ public class discountItem extends Item {
     public String toString() {
         String tostring = "";
         tostring += "| "+this.name+" \t\t| "+this.price+" \t| "+this.amount+" \t\t| "+ this.getTotal() +"\t|\n";
-        tostring += "| -Disc\t\t| "+this.discount+" | \t\t | \t | \t |";
+        tostring += "| -Discount\t| "+this.discount+"%\t\t|\t\t|\t\t|";
         return tostring;
     }
 }
