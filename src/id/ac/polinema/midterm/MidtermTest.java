@@ -9,6 +9,7 @@ package id.ac.polinema.midterm;
 /**
  *
  * @author dhanifudin
+ * next by Taufik     
  */
 public class MidtermTest {
     
