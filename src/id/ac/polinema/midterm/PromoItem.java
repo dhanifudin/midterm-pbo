@@ -13,7 +13,19 @@ public class PromoItem extends Item {
     private float promo;
     
     public PromoItem(String name, float price, int amount, float promo){
-     super(name,price,amount);
-     this.promo = promo;
+        super(name,price,amount);
+        this.promo = promo;
+    }
+    
+    public float getPromoItem(){
+        return price - promo;
+    }
+    
+    public void setPromo(float promo){
+        this.promo = promo;
+    }
+    
+    public float getPromo (){
+        return promo;
     }
 }

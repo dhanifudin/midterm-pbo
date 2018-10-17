@@ -18,6 +18,14 @@ public class DiscountItem extends Item{
     }
     
     public float hargaDiskon(){
-        
+        return price - (price*discount);
+    }
+    
+    public void setDiscount(float discount){
+        this.discount = discount;
+    }
+    
+    public float getDiscount (){
+        return discount;
     }
 }
