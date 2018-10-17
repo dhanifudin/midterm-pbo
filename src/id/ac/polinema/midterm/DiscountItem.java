@@ -9,6 +9,13 @@ package id.ac.polinema.midterm;
  *
  * @author Ismir
  */
-public class DiscountItem {
+public class DiscountItem extends Item {
+    //menambahkan atribut
+    private float discount;
     
+    //menambahkan konstruktor
+    public DiscountItem(String name, float price, int amount, float discount) {
+        super(name, price, amount);
+        this.discount = discount;
+    }
 }
