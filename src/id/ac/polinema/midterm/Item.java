@@ -23,4 +23,12 @@ public class Item {
         this.price = price;
         this.amount = amount;
     }
+    
+    public float getTotalPrice(){
+        
+    }
+    
+    public String toString(){
+        
+    }
 }
