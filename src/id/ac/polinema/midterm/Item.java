@@ -11,5 +11,9 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-ghfd
+    protected String name;
+    protected float price;
+    protected int amount;
+    
+    
 }
