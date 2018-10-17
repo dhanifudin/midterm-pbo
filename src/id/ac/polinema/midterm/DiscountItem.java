@@ -21,4 +21,9 @@ public class DiscountItem extends Item{
         this.amount = amount;
         this.Discount = Discount;
     }
+    
+    public float getTotalPrice(){
+        return price*amount-(Discount*price*amount);
+        
+    }
 }
