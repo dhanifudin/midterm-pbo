@@ -17,7 +17,7 @@ public class Transaction {
         
         public Transaction(Item item, DiscountItem disc, PromoItem promo) {
             this.item = item;
-            this.discountItem = dis;
+            this.discountItem = disc;
             this.promoItem = promo;
         }
     
