@@ -15,4 +15,12 @@ public class Item {
     protected String name;
     protected float price;
     protected int amount;
+
+    public Item(String name, float price, int amount) {
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
+    }
+    
+    
 }
