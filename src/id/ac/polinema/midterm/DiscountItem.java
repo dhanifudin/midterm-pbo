@@ -17,15 +17,19 @@ public class DiscountItem extends Item {
         super(name, price, amount);
         this.discount = discount * 100 ;
     }
-    
+    // disini untuk menghitung diskon pada harga susu
     public float getDiscount() {
         return (amount * price) * discount / 100 ;
     }
     
+    
+    // disini untuk menghitung harga yang sudah didiskon untuk susu
     public float getTotalPrice() {
         return price * amount - getDiscount() ;
     }
     
+    
+    // untuk menampilkan info cetak / output
     public String toString() {
         return "|" + name +"\t\t"+"|" + price + "\t"+"|" + amount + "\t\t"+"|" +getTotalPrice() + "\t|"+"\n| - Disc"+"\t\t"+"|" + discount+"%\t\t|\t" ;
     }
