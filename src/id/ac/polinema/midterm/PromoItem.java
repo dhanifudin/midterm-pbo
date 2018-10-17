@@ -21,7 +21,7 @@ public class PromoItem extends Item{
         return price-promo;
     }
     public float total(){
-        return amount*promo;
+        return amount*getPromo();
     }
 
     @Override
