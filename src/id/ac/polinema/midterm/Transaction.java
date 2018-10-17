@@ -16,12 +16,6 @@ public class Transaction {
 
     public Transaction() {
     }
-
-    public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
-        this.item = item;
-        this.discountItem = discountItem;
-        this.promoItem = promoItem;
-    }
         
         
 	public void print() {
