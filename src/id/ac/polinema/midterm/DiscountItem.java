@@ -10,10 +10,11 @@ package id.ac.polinema.midterm;
  * @author Sintongs
  */
 public class DiscountItem extends Item{
-       private float discount;
+    private float discount;
 
-    public DiscountItem(String name, float price, int amount) {
+    public DiscountItem(String name, float price, int amount, float discount) {
         super(name, price, amount);
+        this.discount = discount*100;
     }
     
     public float getDiscount(){
@@ -21,10 +22,12 @@ public class DiscountItem extends Item{
     }
     
     public float getTotalPrice(){
-        return (amount*price)-getDiscount()
+        return price*amount-getDiscount();
     }
     
-    public String getString(){
-        return"|"+name+"\t\t"+"|"+price+"\t"+"|"+amount+"\t\t"+"|"+getTotalPrice()+"\t"+"\n|-Disc"+"\t\t"+"|"+discount+"%\t\t|\t\t|\t\t|";
-        }
+    public String toString(){
+      
+          return "|"+name+"\t\t"+"|"+price+"\t"+"|"+amount+"\t\t"+"|"+getTotalPrice()+"\t"+"\n|-Disc"+"\t\t"+"|"+discount+"%\t\t|\t\t|\t\t|";    
+    }
+    
 }

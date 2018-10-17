@@ -10,7 +10,7 @@ package id.ac.polinema.midterm;
  *
  * @author dhanifudin
  */
-public class Item extends Item{
+public class Item {
     protected String name;
     protected float price;
     protected int amount;
@@ -26,7 +26,7 @@ public class Item extends Item{
     }
     
     public String toString(){
-        return name+"\t\t"+price+"\t\t"+amount+"\t\t"+getTotalPrice();
+        return name+"\t\t"+price+"\t\t"+amount+"\t\t"+getTotalPrice()+"\t|";
     }
     
 }
