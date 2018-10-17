@@ -16,7 +16,7 @@ public class DiscountItem extends Item {
     
     
     
-    //
+    // konstukror ini sama seperti pada class lainnya agar bisa diinputkan
     public DiscountItem(String name, float price, int amount , float discount) {
         super(name, price, amount);
         this.discount = discount * 100 ;
