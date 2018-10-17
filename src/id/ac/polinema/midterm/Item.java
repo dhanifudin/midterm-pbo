@@ -1,5 +1,7 @@
 package id.ac.polinema.midterm;
 
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,5 +13,7 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-
+    Public PromoItem (String name, float price, amount int);
+    this.discount = discount;
+    
 }
