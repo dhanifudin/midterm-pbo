@@ -27,9 +27,6 @@ public class Item {
     }
     
     public String toString(){
-        this.name = name;
-        this.price = price;
-        this.amount = amount;
-        return (name+price+amount);
+        return "|"+(name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+(price*amount)+"\t|";
     }
 }
