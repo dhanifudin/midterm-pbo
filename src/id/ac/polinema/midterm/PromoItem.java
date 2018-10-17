@@ -7,7 +7,7 @@ package id.ac.polinema.midterm;
 
 /**
  *
- * @author User
+ * @author ArkaLeonant
  */
 class PromoItem {
     private String name;

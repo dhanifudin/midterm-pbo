@@ -7,7 +7,7 @@ package id.ac.polinema.midterm;
 
 /**
  *
- * @author User
+ * @author ArkaLeonant
  */
 class DiscountItem {
     private String name;
@@ -54,7 +54,7 @@ class DiscountItem {
     
     
     public float DiscountItem(){
-        discount = price - (price* amount * discount);
+        discount = (price*amount) - (price* amount * discount);
         return discount;
     }
 }
