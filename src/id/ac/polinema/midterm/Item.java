@@ -41,7 +41,7 @@ public class Item {
     }
     @Override
     public String toString(){ // override
-        return "| "+name+"\t\t| "+price+"\t|"+amount+"\t\t|"+getTotalPrice()+"\t\t|";        
+        return "| "+name+"\t\t| "+price+"\t|"+amount+"\t\t|"+getTotalPrice()+"\t|";        
     }
    
     public float getTotalPrice(){ // override
