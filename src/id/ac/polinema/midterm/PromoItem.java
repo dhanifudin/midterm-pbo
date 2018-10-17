@@ -22,6 +22,7 @@ public class PromoItem extends Item{
         this.Promo = Promo;
     }
     
+    @Override
     public float getTotalPrice(){
         return price*amount-(Promo*amount);
         

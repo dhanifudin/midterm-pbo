@@ -24,7 +24,7 @@ public class Transaction {
 		System.out.println("|---------------------------------------------------------------|");
 		System.out.println("|" + item.name + "\t\t|" + item.price + "\t|" + item.amount + "\t\t|" + item.getTotalPrice() + "\t|");
 		System.out.println("|" + discountItem.name + "\t\t|" + discountItem.price + "\t|" + discountItem.amount + "\t\t|" + discountItem.getTotalPrice() + "\t|");
-                System.out.println("| -Disc\t\t|" + discountItem.Discount + "%\t\t|\t\t|\t\t|");
+                System.out.println("| -Disc\t\t|" + discountItem.Discount * 100 + "%\t\t|\t\t|\t\t|");
 		System.out.println("|" + promoItem.name + "\t\t|" + promoItem.price + "\t|" + promoItem.amount + "\t\t|" + promoItem.getTotalPrice() + "\t|");
                 System.out.println("| -Promo\t|" + promoItem.Promo + "\t\t|\t\t|\t\t|");
 		System.out.println("|---------------------------------------------------------------|");
