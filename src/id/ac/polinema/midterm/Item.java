@@ -14,4 +14,13 @@ public class Item {
     String name;
     float price;
     int amount;
+    
+    Item(){
+    }
+    
+    Item (String name, float price, int amount){
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
+    }
 }
