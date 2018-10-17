@@ -5,6 +5,9 @@ public class Item {
     protected String nama;
     protected float price;
     protected int amount;
+    
+    public Item(){
+    }
 
     public Item(String nama, float price, int amount) {
         this.nama = nama;
@@ -13,12 +16,9 @@ public class Item {
     }
     
     public float getTotalPrice(){
-        return price = price;
+        return price * amount;
     }
     public String toString(){
-        return nama = nama;
-    }
-    public int toInt(){
-        return amount = amount;
+        return nama;
     }
 }
