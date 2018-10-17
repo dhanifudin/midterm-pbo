@@ -9,6 +9,23 @@ package id.ac.polinema.midterm;
  *
  * @author admj
  */
-public class PromoItem {
-    
+public class PromoItem extends Item{
+    private float promo;
+
+    public PromoItem(String nama, float price, int amount, float promo) {
+        super(nama, price, amount);
+        this.promo= promo;
+    }
+
+    public float getPromo() {
+        return price-promo;
+    }
+    public float total(){
+        return amount*promo;
+    }
+
+    @Override
+    public String toString() {
+        return "Promo "+promo;
+    }
 }
