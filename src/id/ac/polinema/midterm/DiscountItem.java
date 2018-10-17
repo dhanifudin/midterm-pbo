@@ -19,6 +19,8 @@ public class DiscountItem extends Item{
         super(name, price, amount);
         this.discount = discount;
     }
-    
+    public float getDiscount(){
+        return (price*amount)-(price * amount * 0.05f);
+    }
     
 }
