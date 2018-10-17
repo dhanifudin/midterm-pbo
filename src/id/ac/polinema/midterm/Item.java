@@ -15,42 +15,19 @@ public class Item {
     protected float price;
     protected int amount;
 
+    //di sini saya membuat konstruktor yang sama seperti di class Main agar tidak error
     public Item(String name, float price, int amount) {
         this.name = name;
         this.price = price;
         this.amount = amount;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
+    }    
     
-    
-    
+    //method ini berguna untuk memberi atau mencari harga total 
     public float getTotalPrice(){
     return amount*price; 
     }
     
+    //method ini berguna seperti informasi informasi seperti yang ada di latihan soal pak
     @Override
     public String toString(){
         return "|" + (name)+"\t\t|"+(price)+"\t|"+(amount)+"\t\t|"+(getTotalPrice())+"\t|"+"\n"+""; 
