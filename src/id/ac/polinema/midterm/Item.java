@@ -22,27 +22,27 @@ public class Item {
     }
     
     public float getTotalPrice(){
-        return price*amount;
+        return price*amount;    //Berfungsi untuk menghitung jumlah dari harga yang sudah di kalikan dengan jumlah
     }
     
     public void setName(String name){
-        this.name = name;
+        this.name = name;   //Befungsi untuk menambahkan nilai pada var name
     }
     
     public String getName(){
-        return name;
+        return name;    //Berfungsi untuk mengembalikan nilai dari var name
     }
     
     public void setPrice(float price){
-        this.price = price;
+        this.price = price; //Hampir sama seperti method di atasnya
     }
     
     public float getPrice(){
-        return price;
+        return price;   //Sama seperti method get di atasnya
     }
     
     public void setAmount(int amount){
-        this.amount = amount;
+        this.amount = amount;   
     }
     
     public int getAmount(){
