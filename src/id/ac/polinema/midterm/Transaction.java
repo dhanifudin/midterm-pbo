@@ -29,10 +29,12 @@ public class Transaction {
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
-		System.out.println(item);
-		System.out.println(discountItem);
-		System.out.println(promoItem);
-		System.out.println("|---------------------------------------------------------------|");
+		System.out.println("|" + item.nama + "\t\t|" + item.price + "\t|" + item.amount + "\t\t|" + item.getTotalPrice() + "\t|");
+		System.out.println("|" + discountItem.nama + "\t\t|" + discountItem.price + "\t|" + discountItem.amount + "\t\t|" + discountItem.getTotalPrice() + "\t|");
+		System.out.println("|-disc\t\t|" + discountItem.getDiscount() + "%\t\t|\t\t|\t\t|");
+                System.out.println("|" + promoItem.nama + "\t\t|" + promoItem.price + "\t|" + promoItem.amount + "\t\t|" + promoItem.getTotalPrice() + "\t|");
+		System.out.println("|-promo\t\t|" + promoItem.promo + "\t\t|\t\t|\t\t|");
+                System.out.println("|---------------------------------------------------------------|");
 	}
 	
 }
