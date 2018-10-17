@@ -32,7 +32,7 @@ public class DiscountItem extends Item{
     public String toString(){
         String print="";
         print +="|"+this.name+"\t\t"+"|"+this.price+"\t"+"|"+this.amount+"\t\t"+"|"+this.getTotalPrice()+"\t|";
-        print += "\n|-Disc"+"\t\t"+"|"+this.discount+"%\t\t|\t\t|\t\t|";
+        print += "\n|-Disc"+"\t\t"+"|"+this.discount+"%\t\t|\t\t|\t\t| ";
         return print;
     }
 }
