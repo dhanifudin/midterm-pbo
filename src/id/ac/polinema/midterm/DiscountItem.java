@@ -58,6 +58,7 @@ public class DiscountItem extends Item{
     
     @Override
     public String toString(){
-        return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t\t| " + getTotalPrice() + " \t|";
+        return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t\t| " + getTotalPrice() + " \t|" +
+                "\n|-Disc \t\t| " +  (getDiscount() * 100)+ "% \t\t|  \t\t|  \t\t|";
     }
 }

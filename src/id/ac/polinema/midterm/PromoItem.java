@@ -58,6 +58,7 @@ public class PromoItem extends Item{
     
     @Override
     public String toString(){
-        return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t\t| " + getTotalPrice() + " \t|";
+        return "| " + getName() + " \t\t| " + getPrice() + " \t| " + getAmount() + " \t\t| " + getTotalPrice() + " \t|" +
+                "\n|-Promo \t| " + getPromo() + "\t|  \t\t|  \t\t|";
     }
 }
