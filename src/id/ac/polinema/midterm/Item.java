@@ -50,8 +50,9 @@ public class Item {
         this.amount = amount;
     }
     public float getTotalPrice(){
-        return price;
+        return price*amount;
     }
+    @Override
     public String toString(){
         return name;
     }
