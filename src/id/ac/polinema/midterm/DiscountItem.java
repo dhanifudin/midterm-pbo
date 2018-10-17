@@ -29,7 +29,7 @@ public class DiscountItem extends Item {
         return total;
     }
     
-    public String toString() {
+    public String toString() { //Set output value
         String param = "";
         param += "| "+this.name+" \t\t| "+this.price+" \t| "+this.amount+" \t\t| "+getTotalPrice()+" \t|\n";
         param += "| -Discount \t| "+this.discount+" \t\t|  \t\t|  \t\t|";
