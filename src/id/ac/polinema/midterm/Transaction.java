@@ -25,7 +25,10 @@ public class Transaction extends Item{
                 System.out.print(item.getPrice()+"\t\t");
                 System.out.print(item.getAmount()+"\t\t");
                 System.out.println(item.getTotalPrice());
-		System.out.println(discountItem.name);
+		System.out.print(discountItem.name+"\t\t");
+                System.out.print(discountItem.price+"\t\t");
+                System.out.print(discountItem.amount+"\t\t");
+                System.out.println(discountItem.getTotalHargasusu());
 		System.out.println(promoItem);
 		System.out.println("|---------------------------------------------------------------|");
 	}
