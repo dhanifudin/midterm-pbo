@@ -20,6 +20,9 @@ public class DiscountItem extends Item{
         super(name, price, amount);
         this.discount = discount;
     }
+    public float setDiskon(){
+        return price * discount;
+    }
           
     
 }
