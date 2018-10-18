@@ -17,5 +17,7 @@ public class PromoItem extends Item{
         this.promo = promo;
     }
     
-    
+    public float getTotalPrice(){
+        return (price * amount) - (price * amount);
+    }
 }

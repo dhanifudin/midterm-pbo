@@ -27,6 +27,6 @@ public class Item {
     
     @Override
     public String toString(){
-        return "|"+(name)+"\t\t| "+(price)+"\t\t| "+(amount)+getTotalPrice()+"\t\t";
+        return "|"+(name)+"\t\t| "+(price)+"\t| "+(amount)+"\t\t| "+getTotalPrice()+"\t|";
     }
 }
