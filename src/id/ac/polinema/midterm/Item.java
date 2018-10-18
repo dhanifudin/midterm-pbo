@@ -28,7 +28,7 @@ public class Item {
         //mengembalikan nilai dengan mengkalikan price dan amount
         return price*amount;
     }
-    //mengubah variable yang berada pada parrent
+    //mengubah variable yang berada pada parrent class
     @Override
     public String toString() {
         return nama;
