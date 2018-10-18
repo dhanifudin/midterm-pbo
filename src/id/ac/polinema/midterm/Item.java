@@ -34,19 +34,19 @@ public class Item {
     }
     
     public void setPrice(float price){
-        this.price = price; //Hampir sama seperti method di atasnya
+        this.price = price; //Hampir sama seperti method di atasnya hanya saja untuk set harga
     }
     
     public float getPrice(){
-        return price;   //Sama seperti method get di atasnya
+        return price;   //Sama seperti method get di atasnya hanya saja untuk get harga
     }
     
     public void setAmount(int amount){
-        this.amount = amount;   
+        this.amount = amount;   //Sama seperti method set di atasnya hanya saja untuk set jumlah
     }
     
     public int getAmount(){
-        return amount;
+        return amount;  //Sama seperti method get di atasnya hanya saja untuk get jumlah
     }
     
     @Override

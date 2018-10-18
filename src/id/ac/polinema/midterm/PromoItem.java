@@ -12,19 +12,24 @@ package id.ac.polinema.midterm;
 public class PromoItem extends Item {
     private float promo;
     
+    //Constructor untuk PromoItem
+    
     public PromoItem(String name, float price, int amount, float promo){
         super(name,price,amount);
         this.promo = promo;
     }
     
+    //Berfungsi untuk mendapatkan harga promo ketika harga jumlah di kurangi dengan promo per item 
     public float getPromoItem(){
         return getTotalPrice() -  promo*amount;
     }
     
+    //Berfungsi untuk menambahkan harga promo
     public void setPromo(float promo){
         this.promo = promo;
     }
     
+    //Berfungsi untuk mengeluarkan harga promo
     public float getPromo (){
         return promo;
     }
