@@ -18,13 +18,14 @@ public class Item {
 
     public Item() {
     }
-
+    
     public Item(String name, float price, int amount) {
         this.name = name;
         this.price = price;
         this.amount = amount;
     }
     
+    //method ini berfungsi sebagai 
     public float getTotalPrice(){
         return (int) amount * price;
     }
