@@ -10,21 +10,26 @@ package id.ac.polinema.midterm;
  * @author HP
  */
 public class DiscountItem extends Item{
+    //menambahka atribut
     private float discount;
-
+    
+    //membuat constructor
     public DiscountItem(String name, float price, int amount, float discount) {
         super(name, price, amount);
         this.discount = discount;
     }
     
+    //method untuk menghitung discount
     public float getDiscount(){
         return (amount * price) * discount;
     }
     
+    //method untuk menghitung hargta total yang sudah di discount
     public float getTotalPrice(){
         return (price * amount) - getDiscount();
     }
     
+    //untuk menampilkan
     @Override
     public String toString(){
         return "|"+name+"\t\t|"+price+"\t|"+amount+"\t\t"+getTotalPrice()+"\t|\n|-disc\t|"+discount*100+"%\t\t|\t\t|\t\t";
