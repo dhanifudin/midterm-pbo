@@ -9,6 +9,8 @@ package id.ac.polinema.midterm;
  * @author J I N G G A
  * next by Taufik
  */
+
+
 public class DiscountItem extends Item{
     private float discount;
 
@@ -17,10 +19,12 @@ public class DiscountItem extends Item{
         this.discount = discount;
     }
     
+    //method yang berfungsi untuk mendapatkan nilai total harga
     public float getTotalPrice(){
         return (price * amount) - (amount * price * discount);
     }
     
+    //method yang berfungsi untuk menampilkan (output) dari atribut diatas 
     @Override
     public String toString(){
         return name +" \t\t "+price+" \t\t "+amount+" \t\t "+getTotalPrice()+" \t \t "+(discount*100);
