@@ -16,7 +16,7 @@ public class Item {
     protected float price;
     protected int amount;
     
-    //membuat constructor
+    //constructor untuk class Item
     public Item(String name, float price, int amount) {
         this.name = name;
         this.price = price;
