@@ -10,16 +10,20 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
    public class Transaction {
+    
+    //hak akses transaction
     private Item item;
     private DiscountItem discountitem;
     private PromoItem promoItem;
     
+   //konstruktor	   
    Transaction(Item item, DiscountItem discountitem, PromoItem promoItem){
         this.item = item;
         this.discountitem = discountitem;
         this.promoItem = promoItem;
     }
-
+    
+    //menampilkan hasil-hasil kelas yang dipanggil	   
     public void print() {
 	System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 	System.out.println("|---------------------------------------------------------------|");
