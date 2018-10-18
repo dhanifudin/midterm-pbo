@@ -18,11 +18,11 @@ public class PromoItem extends Item{ //exteds digunkan untuk menurunkan dari cla
         this.promo = promo;
     }
     
-    public float getTotalPrice(){
+    public float getTotalPrice(){   //getter hargatotal
         return (price *amount)-(promo*amount);
     }
     
-    public float getPromo(){
+    public float getPromo(){    //getter promo
         return promo;
     }
     

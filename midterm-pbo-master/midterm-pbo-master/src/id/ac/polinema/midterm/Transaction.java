@@ -38,7 +38,7 @@ public class Transaction {
                 System.out.print(promoItem.nama+"\t\t");    //melakukan pengambilan nama. tidak menggunakan get karena 'nama' sudah berada di class parent sehinggan tidak perlu melakukan setter dan getter
                 System.out.print(promoItem.price+"\t\t");   //melakukan pengambilan harga. tidak menggunakan get karena 'harga' sudah berada di class parent sehinggan tidak perlu melakukan setter dan getter
                 System.out.print(promoItem.amount+"\t\t");  //melakukan pengambilan jumlah. tidak menggunakan get karena 'jumlah' sudah berada di class parent sehinggan tidak perlu melakukan setter dan getter
-                System.out.println(promoItem.getTotalPrice());
+                System.out.println(promoItem.getTotalPrice());  //mengambil total harga promo
                 System.out.println("-Promo\t\t" + promoItem.getPromo());
                 
 		System.out.println("|---------------------------------------------------------------|");

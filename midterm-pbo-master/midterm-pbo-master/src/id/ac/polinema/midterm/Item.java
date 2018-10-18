@@ -15,39 +15,39 @@ public class Item {
     protected float price;
     protected int amount;
 
-    public String getNama() {
+    public String getNama() {   //getter nama
         return nama;
     }
 
-    public void setNama(String nama) {
+    public void setNama(String nama) { //setter nama 
         this.nama = nama;
     }
 
-    public float getPrice() {
+    public float getPrice() {   //getter nama
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(float price) { //setter nama
         this.price = price;
     }
 
-    public int getAmount() {
+    public int getAmount() {    //getter nama
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(int amount) { //setter jumlah
         this.amount = amount;
     }
 
-    public Item(String nama, float price, int amount) {
+    public Item(String nama, float price, int amount) { //constructor class Item
         this.nama = nama;
         this.price = price;
         this.amount = amount;
     }
-    public Item (){
+    public Item (){ //constructor class item
         
     }
-    public String toString(){
+    public String toString(){   //
         return null;
     } 
     public float getTotal(){
