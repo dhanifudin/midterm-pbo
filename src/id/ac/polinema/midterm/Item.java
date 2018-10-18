@@ -22,12 +22,14 @@ public class Item {
         
     }
     
+    // membuat construcor
     public Item(String name, float price, int amount) {
         this.name = name;
         this.price = price;
         this.amount = amount;
     }
-
+    // membuat getter totalPrice untuk mendapatkan harga total yanng didapat dari harga satuan
+    // barang dikalikan jumlah beli
     public float getTotalPrice(){
         return price * amount;
     }
