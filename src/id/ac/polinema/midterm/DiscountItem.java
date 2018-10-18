@@ -10,7 +10,7 @@ package id.ac.polinema.midterm;
  * @author KINTUL
  */
 class DiscountItem extends Item{
-    // membuat konstruktor dengan acess modifier protected agar bisa diakses di 
+    // membuat atribut dengan acess modifier protected agar bisa diakses di 
     // class yang memilikinya 
     // ketika saya menggunakan private akan eror pada method print pada class Transaction
     protected float discount;
