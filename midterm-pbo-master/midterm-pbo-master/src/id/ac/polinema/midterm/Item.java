@@ -47,9 +47,11 @@ public class Item {
     public Item (){ //constructor class item
         
     }
+    @Override
     public String toString(){   //
         return null;
     } 
+    
     public float getTotal(){
         return price * amount;  //perhitungan jumlah harga yang hgarus di bayar
     }
