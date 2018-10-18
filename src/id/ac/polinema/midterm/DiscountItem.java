@@ -33,7 +33,7 @@ public class DiscountItem extends Item{
    //method bikin untuk menampiklan informasi yang telah di berikan diskon.
     @Override
     public String toString(){
-        return "|"+(this.name)+"\t\t|"+(this.price)+"\t|"+(this.amount)+"\t\t"+getTotalPrice()+"\t|"+"\n|-Disc"+"\t\t|"+this.discount+"%\t\t\t";
+        return "|"+(this.name)+"\t\t|"+(this.price)+"\t|"+(this.amount)+"|\t\t|"+getTotalPrice()+"\t|"+"\n|-Disc"+"\t\t|"+this.discount+"%\t\t\t";
     }
    
     

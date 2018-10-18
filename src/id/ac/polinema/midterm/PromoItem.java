@@ -27,7 +27,7 @@ public class PromoItem extends Item{
     //method ini beguna untuk memberikan informasi tentang promo yang telah di buat.
     @Override
     public String toString(){
-        return "|"+(this.name)+"\t\t|"+(this.price)+"\t|"+(this.amount)+"\t\t"+getTotalPrice()+"\t|"+"\n|-Promo"+"\t\t|"+this.promo+"\t\t\t";
+        return "|"+(this.name)+"\t\t|"+(this.price)+"\t|"+(this.amount)+"|\t\t|"+getTotalPrice()+"\t|"+"\n|-Promo"+"\t\t|"+this.promo+"\t\t\t";
     }
     
     
