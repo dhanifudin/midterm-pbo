@@ -10,10 +10,10 @@ package id.ac.polinema.midterm;
  * @author HP
  */
 public class DiscountItem extends Item{
-    //menambahka atribut
+    //menambahkan atribut
     private float discount;
     
-    //membuat constructor
+    //constructor untuk class DiscountItem
     public DiscountItem(String name, float price, int amount, float discount) {
         super(name, price, amount);
         this.discount = discount;
