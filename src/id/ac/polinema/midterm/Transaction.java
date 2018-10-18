@@ -17,6 +17,7 @@ public class Transaction extends Item{
 	public Transaction() {
 	}
 
+	//constructor item, discountItem,promoItem
 	public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
 		this.item = item;
 		this.discountItem = discountItem;

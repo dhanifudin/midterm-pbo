@@ -15,11 +15,12 @@ public class Item {
 	protected float price;
 	protected int amount;
 
+	
 	public Item() {
 	}
 
 	
-	
+	//constructor String name, float price, int amount
 	public Item(String name, float price, int amount) {
 		this.name = name;
 		this.price = price;
@@ -50,7 +51,7 @@ public class Item {
 		this.amount = amount;
 	}
 	
-	
+	//menghitung jumlah yang harus di bayar
 	public float getTotalPrice(){
 		return price * amount;
 	}

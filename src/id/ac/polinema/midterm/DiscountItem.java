@@ -15,13 +15,13 @@ public class DiscountItem extends Item{
 	public DiscountItem() {
 	}
 	
-	
-
+	//constructor String name, float price, int amount, float discount
 	public DiscountItem(String name, float price, int amount, float discount ) {
 		super(name, price, amount);
 		this.discount = discount;
 	}
 	
+	//menghitung total discount
 	public float getTotalPrice(){
 		return (price*amount)-(price*amount*discount);
 	} 

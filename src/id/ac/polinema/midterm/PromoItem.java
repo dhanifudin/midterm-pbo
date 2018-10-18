@@ -15,17 +15,18 @@ public class PromoItem extends Item{
 	public PromoItem() {
 	}
 	
-	
-
+	//constructor String name, float price, int amount, float promo
 	public PromoItem(String name, float price, int amount, float promo) {
 		super(name, price, amount);
 		this.promo = promo;
 	}
 	
+	//menghitung total harga promo
 	public float getTotalPrice(){
 		return (price*amount)-(promo*amount);
 	}
 
+	//getter promo
 	public float getPromo() {
 		return promo;
 	}
