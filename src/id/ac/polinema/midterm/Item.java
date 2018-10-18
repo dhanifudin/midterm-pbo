@@ -11,20 +11,25 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
+    
+    //accses modifier enkasulapsi
     protected String name;
     protected float price;
     protected int amount;
     
+    //konstruktor
     Item(){
         
     }
-
+    
+    //konstruktor
     public Item(String name, float price, int amount) {
         this.name = name;
         this.price = price;
         this.amount = amount;
     }
-
+    
+    //geter dan setter
     public String getName() {
         return name;
     }
@@ -53,6 +58,7 @@ public class Item {
         return name;
     }
     
+    //untuk mendapatkan harga total
     public float getTotalPrice(){
         return price*amount;
     }
