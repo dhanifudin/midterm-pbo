@@ -11,16 +11,21 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-      protected String name;
+      //menambahkan atribut bertipe string
+    protected String name;
+      //menambahkan atribut bertipe float
     protected float price;
+      //menambahkan atribut bertipe int
     protected int amount;
-
+      
+      //menambahkan kontruktor
     public Item(String name, float price, int amount) {
         this.name = name;
         this.price = price;
         this.amount = amount;
     }
-
+      
+      //menghitung total
     public float getTotalPrice() {
         return price * amount;
     }
