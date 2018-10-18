@@ -11,7 +11,7 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-    // menambahkan constructor yang acess modifier nya protected
+    // menambahkan atribut yang acess modifier nya protected
     // karena akses protected dapat diakses hanya oleh class yang memilikinya saja
     // dan juga class yang merupakan keturunannya
     protected String name;
