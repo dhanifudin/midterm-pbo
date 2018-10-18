@@ -21,7 +21,7 @@ public class PromoItem extends Item{
     public float getTotalPrice(){
         return (amount * price) - (amount * promo);
     }
-    
+                                                                 
     //method yang berfungsi sebagai menampilkan output
     @Override
     public String toString(){
