@@ -10,11 +10,14 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Transaction {
-
+	//menambahkan atribut data item
 	private Item item;
+	//menambahkan atribut data promoitem
         private PromoItem promoItem;
+	//menambahkan atribut data discountitem
         private DiscountItem discountItem;
-
+	
+	//menambahkan atribut constructor
     public Transaction(Item item,  DiscountItem discountItem, PromoItem promoItem) {
         this.item = item;
         this.promoItem = promoItem;
