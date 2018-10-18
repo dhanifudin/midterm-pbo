@@ -4,9 +4,12 @@ package id.ac.polinema.midterm;
  *
  * @author aflah brill
  */
+
+//dapat mengambil turunan dari class item
 public class PromoItem extends Item{
     private float promo;
-
+    
+    //menambahkan atribut  
     public PromoItem(String name, float price, int amount, float promo) {
         super(name, price, amount);
         this.promo = promo;
