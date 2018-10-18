@@ -10,18 +10,24 @@ package id.ac.polinema.midterm;
  * @author Anonymous
  */
 public class DiscountItem extends Item{
-    private float discount;
+    private float discount; // Membuat atribut discount dengan tipe data float yang hanya bisa di akses class itu sendiri
     
     public DiscountItem(String name, float price, int amount, float discount) {
         super(name, price, amount);
         this.discount = discount;
     }
+    // Mengambil nilai dari atribut name, price, amount (class parent), discount
+    
     @Override
     public float getTotalPrice(){
         return (price * amount) - (price * amount * discount);
     }
+    // Menghitung discount
+    
     @Override
     public String toString(){
         return "|"+(name)+"\t\t| "+(price)+"\t| "+(amount)+"\t\t| "+getTotalPrice()+"\t|";
     }
+    // Representasi data berupa String dengan ketentuan sebagai berikut
+    // Pada class ini yang menggunakan method toString() melakukan override
 }
