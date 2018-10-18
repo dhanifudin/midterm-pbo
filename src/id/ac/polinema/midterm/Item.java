@@ -29,7 +29,7 @@ public class Item {
     public float getTotalPrice() {
         return price * amount;
     }
-    
+    //mengubah variabel yg berada di parent class
     @Override
     public String toString(){
         return name;
