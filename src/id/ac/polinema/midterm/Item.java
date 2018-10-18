@@ -10,7 +10,7 @@ public class Item {
     }
     
     
-
+//construktor Untuk mendapatkan nilai dari class main//
     public Item(String name, float price, int amount) {
         this.name = name;
         this.price = price;
