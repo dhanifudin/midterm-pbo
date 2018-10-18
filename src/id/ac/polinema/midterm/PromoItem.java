@@ -26,7 +26,7 @@ public class PromoItem extends Item{
         //mengalikan amount dengan getPromo
         return amount*getPromo();
     }
-    //mengubah nilai dari class parrent
+    //mengubah nilai dari parrent class
     @Override
     public String toString() {
         return "-Promo "+promo;
