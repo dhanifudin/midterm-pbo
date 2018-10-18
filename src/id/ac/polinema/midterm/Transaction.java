@@ -10,7 +10,7 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Transaction {
-    // membuat konstruktor dengan acess modifier private
+    // membuat atribut dengan acess modifier private
     // karena privat hanya bisa diakses di kelass ini saja
     private Item item;
     private DiscountItem discountItem;
