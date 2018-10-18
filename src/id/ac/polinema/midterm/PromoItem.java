@@ -17,7 +17,13 @@ public class PromoItem extends Item{
         this.promo = promo;
     }
     
+    @Override
     public float getTotalPrice(){
-        return (price * amount) - (price * amount);
+        return (price * amount) - (amount * promo);
+    }
+    
+    @Override
+    public String toString(){
+        return "|"+(name)+"\t\t| "+(price)+"\t| "+(amount)+"\t\t| "+getTotalPrice()+"\t|";
     }
 }
