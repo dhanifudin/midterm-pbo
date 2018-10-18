@@ -26,7 +26,7 @@ public class DiscountItem extends Item{
     
     @Override
     public String toString(){
-        return "|"+(name)+"\t\t| "+(price)+"\t| "+(amount)+"\t\t| "+getTotalPrice()+"\t|";
+        return "|"+(name)+"\t\t| "+(price)+"\t| "+(amount)+"\t\t| "+getTotalPrice()+"\t|"+"\n"+"|"+"-Disc"+"\t\t| "+discount*100+" %"+"\t\t| "+"\t\t|"+"\t\t| ";
     }
     // Representasi data berupa String dengan ketentuan sebagai berikut
     // Pada class ini yang menggunakan method toString() melakukan override
