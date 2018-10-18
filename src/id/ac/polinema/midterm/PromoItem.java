@@ -17,10 +17,12 @@ public class PromoItem extends Item{
         this.promo = promo;
     }
     
+    //method yang berfungsi sebagai menghitung total harga setelah mendapatkan promo
     public float getTotalPrice(){
         return (amount * price) - (amount * promo);
     }
     
+    //method yang berfungsi sebagai menampilkan output
     @Override
     public String toString(){
         return name +" \t\t "+price+" \t\t "+amount+" \t\t "+getTotalPrice()+" \t \t "+promo;
