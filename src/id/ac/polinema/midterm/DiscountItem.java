@@ -10,18 +10,22 @@ package id.ac.polinema.midterm;
  * @author falcao
  */
 public class DiscountItem extends Item{
-    
+    //untuk memasukan diskon
     public float discount;
     
+    
+    //konstruktor
     DiscountItem(){
     
     }
     
+    //konstruktor
     public DiscountItem(String name, float price, int amount, float discount){
         super(name, price, amount);
         this.discount = discount;
     }
-
+    
+    //setter dan getter
     public float getDiscount() {
         return discount;
     }
@@ -54,10 +58,12 @@ public class DiscountItem extends Item{
         this.amount = amount;
     }
     
+    //untuk menghitung discount barang
     public float DiscountItem(){
         return (price*amount) - (price*amount*discount);
     }
     
+    //atribut
     public float Disc(){
         return discount * 100;
     }
