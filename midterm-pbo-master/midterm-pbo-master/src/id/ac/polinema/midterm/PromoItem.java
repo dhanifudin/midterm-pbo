@@ -10,11 +10,11 @@ package id.ac.polinema.midterm;
  *
  * @author Expression daffa is undefined on line 12, column 14 in Templates/Classes/Class.java.
  */
-public class PromoItem extends Item{
+public class PromoItem extends Item{ //exteds digunkan untuk menurunkan dari class parent ke class child
     private float promo;
 
     public PromoItem(String nama,float price, int amount, float promo) {
-        super(nama, price, amount);
+        super(nama, price, amount); //"super di gunakan untuk memanggil variabel yang berada di class parent
         this.promo = promo;
     }
     

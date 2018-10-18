@@ -51,7 +51,7 @@ public class Item {
         return null;
     } 
     public float getTotal(){
-        return price * amount;
+        return price * amount;  //perhitungan jumlah harga yang hgarus di bayar
     }
     
 }
