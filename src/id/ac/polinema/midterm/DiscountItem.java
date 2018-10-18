@@ -1,5 +1,5 @@
 package id.ac.polinema.midterm;
-
+//extends untuk menjadikan class ini sebagai warisan dari class Item
 public class DiscountItem extends Item {
     private float discount;
     
