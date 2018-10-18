@@ -4,14 +4,17 @@ package id.ac.polinema.midterm;
  *
  * @author aflah brill
  */
-public class DiscountItem extends Item{
-    private float discount;
 
+//dapat mengambil turunan dari class item
+public class DiscountItem extends Item{
+    //menambahkan atribut float
+    private float discount;
+    //menambahkan kontruktor
     public DiscountItem(String name, float price, int amount, float discount) {
         super(name, price, amount);
         this.discount = discount;
     }
-
+    
     public float getDiscount() {
         return discount;
     }
@@ -43,11 +46,11 @@ public class DiscountItem extends Item{
     public void setAmount(int amount) {
         this.amount = amount;
     }
-    
+    //menghitung jumlah diskon
     public float DiscountItem(){
         return (price * amount)-(price*amount*discount);
     }
-    
+    //menampilkan diskon
     public float disc(){
         return discount;
     }
