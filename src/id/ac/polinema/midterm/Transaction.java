@@ -14,14 +14,15 @@ public class Transaction {
     private Item item;
     private DiscountItem discountitem;
     private PromoItem promoitem;
-
+    
+    //constructor untuk class Transaction
     public Transaction(Item item, DiscountItem discountitem , PromoItem promoitem) {
         this.item = item;
         this.discountitem = discountitem;
         this.promoitem = promoitem;
     }
     
-
+        //method untuk menampilkan
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
