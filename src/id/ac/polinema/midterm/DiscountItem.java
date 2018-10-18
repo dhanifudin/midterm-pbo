@@ -32,6 +32,6 @@ public class DiscountItem extends Item{
     //mengubah variable yang ada pada parrent class
     @Override
     public String toString() {
-        return "Disc "+5.0+"%";
+        return "-Disc "+5.0+"%";
     }
 }
