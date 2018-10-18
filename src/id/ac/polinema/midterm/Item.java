@@ -25,7 +25,8 @@ public class Item {
         return (amount*price);
     }
     
+    @Override
     public String toString(){
-        return 
+        return "|"+(name)+"\t\t| "+(price)+"\t\t| "+(amount)+getTotalPrice()+"\t\t";
     }
 }
