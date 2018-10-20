@@ -11,14 +11,14 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-    protected String nama;
-    protected float price;
-    protected int amount;
+    protected String nama; //atribut dari
+    protected float price; //atribut harga
+    protected int amount; // atribut jumlah
 
-    public Item() {
+    public Item() { //construktor item
     }
 
-    public Item(String nama, float price, int amount) {
+    public Item(String nama, float price, int amount) { //parameter dari item
         this.nama = nama;
         this.price = price;
         this.amount = amount;
