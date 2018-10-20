@@ -11,14 +11,14 @@ package id.ac.polinema.midterm;
  */
 public class Transaction {
     
-    private Item item;
-    private DiscountItem discountItem;
-    private PromoItem promoItem;
+    private Item item; //atribut item yang mengambil class item sebagai tipe data
+    private DiscountItem discountItem;// atribut discountitem yg mengambil class DiscounItem sebagai tipe data  
+    private PromoItem promoItem; //atribut promoitem yg mengambil class promoItem sebagai tipe data 
 
-    public Transaction() {
+    public Transaction() { //constraktor Transaction
     }
 
-    public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
+    public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) { //parameter Transaction
         this.item = item;
         this.discountItem = discountItem;
         this.promoItem = promoItem;
