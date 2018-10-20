@@ -9,20 +9,20 @@ package id.ac.polinema.midterm;
  *
  * @author hp
  */
-class DiscountItem extends Item {
+class DiscountItem extends Item { // menurunkan atribut dari Class Item
     float discount;
     
-    public DiscountItem(){
+    public DiscountItem(){ //construktor DiscountItem
         
     }
 
-    public DiscountItem(String nama, float price, int amount, float discount) {
+    public DiscountItem(String nama, float price, int amount, float discount) { //Parameter DiscountItem
         super(nama, price, amount);
         this.discount = discount;
     }
     
     @Override
-    public float getTotalPrice(){
+    public float getTotalPrice(){ //Rumus menghitung Diskon
        return price*amount-(discount*price*amount); 
     }
     
