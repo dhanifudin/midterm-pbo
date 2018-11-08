@@ -11,5 +11,27 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
-
+    protected String name;
+    protected float price;
+    protected int amount;
+    
+    //Konstruktor class Item
+    public Item(String name, float price, int amount) {
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
+    }
+    
+    //Method untuk mengembalikan total harga per item
+    public float getTotal() {
+        return this.price * this.amount;
+    }
+    
+    //Method untuk menampilkan isi dari method Item
+    public String toString() {
+        String tostring = "";
+        tostring += "| "+this.name+" \t\t| "+this.price+" \t| "+this.amount+" \t\t| "+ this.getTotal() +"\t|";
+        return tostring;
+    }
+    
 }

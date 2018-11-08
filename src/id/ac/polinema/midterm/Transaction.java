@@ -11,6 +11,17 @@ package id.ac.polinema.midterm;
  */
 public class Transaction {
 
+        private Item item;                  //Inisialisasi atribut -->
+        private discountItem discountItem;
+        private promoItem promoItem;        //                     -->
+        
+        //Konstruktor class Transaction
+        public Transaction(Item item, discountItem discountItem, promoItem promItem) {
+            this.item = item;
+            this.discountItem = discountItem;
+            this.promoItem = promItem;
+        }
+        
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
