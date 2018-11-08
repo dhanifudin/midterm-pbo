@@ -11,5 +11,28 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
+    protected String name;
+    protected float price;
+    protected int amount;
 
+    //di sini saya membuat konstruktor yang sama seperti di class Main agar tidak error
+    public Item(String name, float price, int amount) {
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
+    }    
+    
+    //method ini berguna untuk memberi atau mencari harga total 
+    public float getTotalPrice(){
+    return this.amount*this.price; 
+    }
+    
+    //method ini berguna seperti informasi informasi seperti yang ada di latihan soal pak
+    @Override
+    public String toString(){
+        return "|" + (this.name)+"\t\t|"+(this.price)+"\t|"+(this.amount)+"\t\t|"+(getTotalPrice())+"\t|"+"\n"+""; 
+    }
+    
+            
+    
 }
