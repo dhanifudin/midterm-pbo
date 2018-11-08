@@ -7,16 +7,53 @@ package id.ac.polinema.midterm;
 
 /**
  *
- * @author dhanifudin
+ * @author MEUTIA KHANANDIYA
  */
 public class Transaction {
 
-	public void print() {
+    //menambahkan atribut bersifat private
+    private Item item;
+    private DiscountItem discountItem;
+    private PromoItem promoItem;
+
+    public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
+        this.item = item;
+        this.discountItem = discountItem;
+        this.promoItem = promoItem;
+    }
+
+    public Item getItem() {
+        return item;
+    }
+
+    public void setItem(Item item) {
+        this.item = item;
+    }
+
+    public DiscountItem getDiscountItem() {
+        return discountItem;
+    }
+
+    public void setDiscountItem(DiscountItem discountItem) {
+        this.discountItem = discountItem;
+    }
+
+    public PromoItem getPromoItem() {
+        return promoItem;
+    }
+
+    public void setPromoItem(PromoItem promoItem) {
+        this.promoItem = promoItem;
+    }
+
+public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
-		System.out.println(item);
-		System.out.println(discountItem);
-		System.out.println(promoItem);
+		System.out.println("|" + item.name + "\t\t|" + item.price + "\t|" + item.amount + "\t\t|" + item.getTotalPrice() + "\t|");
+		System.out.println("|" + discountItem.name + "\t\t|" + discountItem.price + "\t|" + discountItem.amount + "\t\t|" + discountItem.discount + "\t|");
+                System.out.println("-Disc\t\t|" + "5.0 % \t\t|\t\t|\t\t|");
+		System.out.println("|" + promoItem.name + "\t\t|" + promoItem.price + "\t|" + promoItem.amount + "\t\t|" + promoItem.promo + "\t|");
+                System.out.println("-Promo\t\t|" + "2.000.0 \t|\t\t|\t\t|");
 		System.out.println("|---------------------------------------------------------------|");
 	}
 	
