@@ -10,8 +10,26 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Transaction {
+    Item item; 
+    DiscountItem discountItem;
+    PromoItem promoItem;
 
-	public void print() {
+    public Transaction(Item item, DiscountItem discountItem, PromoItem promoItem) {
+        this.item = item;
+        this.discountItem = discountItem;
+        this.promoItem = promoItem;
+    }
+    
+    public Item getItem() { // mengambil nilai item
+        return item;
+    }
+    public DiscountItem getDiscountItem() { // mengambil nilai dari diskonItem
+        return discountItem;
+    }
+    public PromoItem getPromoItem() { // mengambil nilai dari promoItemnya
+        return promoItem;
+    }
+	public void print() { // menampilkan data
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
 		System.out.println(item);
