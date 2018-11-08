@@ -11,12 +11,26 @@ package id.ac.polinema.midterm;
  */
 public class Transaction {
 
+    private Item item ;
+    private DiscountItem discountitem ;
+    private PromoItem promoitem ;
+
+    
+    // saya membuat construktor ini untuk menghitung diskon pada class Discount item dan menghitung promo pada class PromoItem
+    public Transaction(Item item, DiscountItem discountitem, PromoItem promoitem) {
+        this.item = item;
+        this.discountitem = discountitem;
+        this.promoitem = promoitem;
+    }
+    
+    
+  
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
 		System.out.println(item);
-		System.out.println(discountItem);
-		System.out.println(promoItem);
+		System.out.println(discountitem);
+		System.out.println(promoitem);
 		System.out.println("|---------------------------------------------------------------|");
 	}
 	
