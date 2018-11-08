@@ -11,5 +11,24 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Item {
+    protected String name;
+    protected float price;
+    protected int amount;
 
+    public Item() {
+    }
+
+    public Item(String name, float price, int amount) {
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
+    }
+    
+    public float getTotalPrice(){
+        return (int)(amount*price);
+    }
+    
+    public String toString(){
+        return "|"+(name)+" \t\t|"+(price)+"\t|"+(amount)+"\t\t|"+(price*amount)+"\t|";
+    }
 }
