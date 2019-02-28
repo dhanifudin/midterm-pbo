@@ -24,9 +24,9 @@ public class DiscountItem extends Item {
     }
     
     public float getTotalPrice() { // Get total after discount
-        float total = this.price * this.amount;
-        total = total - getDisc();
-        return total;
+        float hasil = this.price * this.amount;
+        hasil = hasil - getDisc();
+        return hasil;
     }
     
     public String toString() { //Set output value
