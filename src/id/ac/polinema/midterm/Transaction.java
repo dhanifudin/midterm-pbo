@@ -10,7 +10,17 @@ package id.ac.polinema.midterm;
  * @author dhanifudin
  */
 public class Transaction {
-
+        
+        private Item item;
+        private DiscountItem discountItem;
+        private PromoItem promoItem;
+        
+        public Transaction(Item item, DiscountItem disc, PromoItem promo) {
+            this.item = item;
+            this.discountItem = disc;
+            this.promoItem = promo;
+        }
+    
 	public void print() {
 		System.out.println("| Nama \t\t| Harga \t| Jumlah \t| Total \t|");
 		System.out.println("|---------------------------------------------------------------|");
